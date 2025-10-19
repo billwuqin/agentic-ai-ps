@@ -50,7 +50,20 @@ author:
 normative:
 
 informative:
+ Agentic-AI-Wireless:
+   title: Advanced Architectures Integrated with Agentic AI for Next-Generation Wireless Networks
+   target: https://arxiv.org/html/2502.01089v3
+   date: 2025
 
+ ANIMA:
+   title: IETF ANIMA WG
+   target: https://datatracker.ietf.org/group/anima/about/
+   date: 2025
+
+ AIPREF:
+   title: IETF AIPREF WG
+   target: https://datatracker.ietf.org/group/aipref/about/
+   date: 2025
 ...
 
 --- abstract
@@ -110,15 +123,15 @@ actionable network configuration plans.
 
 Agentic AI optimizes resource allocation based on real-time demand and business objectives, enabling smarter resource and energy usage. In architecture research for 6G, for
 example, the application of constrained agentic AI techniques focused on energy efficiency and secure real-time learning for dynamic resource allocation has been identified
-as a key objective.
+as a key objective {{Agentic-AI-Wireless}}.
 
 The Autonomic Networking Integrated Model and Approach (ANIMA) Working Group of the IETF developed the Autonomic Service Agent (ASA) for autonomic networking. RFC 7575
 defines the ASA as An agent implemented on an autonomic node that implements an autonomic function, either in part (in the case of a distributed function) or whole '
 {{?RFC7575}}. In other words, the ASA is a core component of ANIMA: a software module that performs autonomic functions on network nodes. The ANIMA Working Group is
-defining design guidelines, lifecycle management, authorization and coordination standards for the ASA.
+defining design guidelines, lifecycle management, authorization and coordination standards for the ASA {{ANIMA}}.
 
 IETF’ AI Preferences (AIPREF) Working Group is focused on standardizing a common vocabulary and mechanism through which users and systems can express their preferences
-regarding the use of their content in the development, training, deployment and use of AI models.
+regarding the use of their content in the development, training, deployment and use of AI models {{AIPREF}}.
 
 ## Operation of Agentic AI for Network Management
 
