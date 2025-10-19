@@ -9,8 +9,8 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: "IRTF"
+workgroup: "Network Management"
 keyword:
  - Agentic AI
  - network management
@@ -46,7 +46,7 @@ author:
     fullname: Benoit Claise
     organization: Individual
     email: benoit@everything-ops.net
-    
+
 normative:
 
 informative:
@@ -75,7 +75,7 @@ When such autonomous agents are widely deployed across the communications and ne
 
 {::boilerplate bcp14-tagged}
 
-# Agentic AI for network management 
+# Agentic AI for network management
 
 ## Role of Agentic AI in network management
 
@@ -136,10 +136,10 @@ These components enable the agent to communicate with and make changes to the ex
  - Execution environment: A sandbox environment in which code generated according to the plan is executed safely, and external tools are invoked.
 
  - Sensing/observation mechanism: The channel through which the agent verifies execution results and collects the current environmental state. This involves more than just
-   invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.  
+   invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.
 
-+----------------------------------------------------------------+     
-|                                                                |       
++----------------------------------------------------------------+
+|                                                                |
 |   +--------------------------+                                 |
 |   |  1.GOAL / INTENT(Input)  |                                 |
 |   +------------------|-------+                                 |
