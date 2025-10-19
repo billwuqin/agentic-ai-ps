@@ -258,9 +258,9 @@ ANIMA's ASA is conceptually a precursor to Agentic AI, but lacks a cognitive cor
 Agentic AI introduces LLM-based planning and tool-use capabilities that require complex, semantic negotiation (A2A) beyond simple information exchange (GeneRic Autonomic
 Signaling Protocol; GRASP), demonstrating the necessity for a dedicated protocol layer that extends beyond the existing ANIMA framework.
 
-# Objects of Agentic AI for network management
+# Objectives of Agentic AI for network management
 
-## Object 1 - Hyper-Autonomous Network Operations & Management
+## Objective 1 - Hyper-Autonomous Network Operations & Management
 
 Beyond minimizing human intervention, it must implement a Self-Driving network that autonomously recognises, diagnoses, infers, and resolves issues even in unpredictable
 situations.
@@ -274,7 +274,7 @@ Key Features:
 - Autonomous Configuration & Optimization: AI agents comprehend high-level objectives such as ‘optimize user experience’ and autonomously configure and continuously fine-
   tune routing protocols, QoS policies, security rules, and other elements to achieve them.
 
-## Object 2 - Intelligent & Dynamic Resource Orchestration
+## Objective 2 - Intelligent & Dynamic Resource Orchestration
 
 To address unpredictable traffic demands such as 6G, holographic communications, and large-scale IoT, network resources (computing, storage, bandwidth) are allocated and
 coordinated in real time and proactively.
@@ -288,7 +288,7 @@ Key Features:
 - Edge Computing Resource Optimization: By predicting edge node load and user mobility, AI agents dynamically reallocate workloads to optimal edge nodes while ensuring
   service continuity.
 
-## Object 3 - Predictive & Adaptive Network Security
+## Objective 3 - Predictive & Adaptive Network Security
 
 Beyond defending against known attack patterns, AI agents autonomously detect unknown zero-day attacks or advanced persistent threats (APTs) and reconfigure defence systems
 in real time.
@@ -300,7 +300,7 @@ Key Features:
 - Dynamic Defense Posture: AI agents dynamically modify firewall policies, access control lists (ACLs), and traffic filtering rules in real time based on attack type and
   intensity, thereby minimizing the attack surface.
 
-## Object 4 - Enabling Novel Network Service Models
+## Objective 4 - Enabling Novel Network Service Models
 
 By transforming the network itself into a single, vast distributed AI platform, it enables new communication services and business models that were previously impossible.
 
@@ -310,6 +310,26 @@ Key Features:
   Network-as-a-Service that instantly allocates the necessary resources (such as network slices and edge servers).
 - Semantic Communication: Communication focuses on the “meaning” or “purpose” conveyed by data rather than the bits themselves, enabling ultra-efficient communication that
   achieves maximum effect with minimal data transmission.
+
+## Objective 5 - Autonomous, High-Fidelity & Action-Aware Network Measurement
+
+To turn raw network telemetry into trustworthy, context-rich insight that continuously retrains itself, explains its own uncertainty, and feeds closed-loop control without
+human analysts.
+
+Key Features:
+- Generative Telemetry Synthesis & Gap-Filling: Gen-AI models learn multi-modal telemetry (packets, flow records, SNMP, syslogs, DPI, spectrum scans) and hallucinate
+  statistically faithful “missing data” where sensors are sparse or silent, delivering 100 % coverage at any time/space scale.
+
+- Semantic Anomaly Narratives & Root-Cause Metrics: Instead of threshold alerts, the model outputs human-readable stories (“Between 02:13-02:19 UTC, TCP RTT on slice-C rose
+  38 % because 17 % of ECN-marked packets were re-routed via the Seattle POP due to a mis-announced BGP community”). Each sentence is back-traced to verifiable measurement
+  samples.
+
+- Self-Driving Measurement Campaigns: The AI translates high-level intents (“tell me if user-perceived 4 K latency could exceed 150 ms during the next football final”) into
+  dynamic sampler schedules, probe paths, and packet structures; it launches the campaign, stops when statistical confidence is reached, and releases resources back to the
+  data plane.
+
+- Counterfactual & Predictive “What-if” Metrics: Given a proposed config change (new AQM, additional slice, 400 GbE upgrade), the generator produces the expected
+  delay/loss/jitter distributions before any byte is moved, letting operators compare KPI deltas without real-world probing.
 
 # Use case of Agentic AI for network management
 
