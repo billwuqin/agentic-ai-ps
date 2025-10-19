@@ -195,7 +195,7 @@ Table of Contents
    In architecture research for 6G, for example, the application of
    constrained agentic AI techniques focused on energy efficiency and
    secure real-time learning for dynamic resource allocation has been
-   identified as a key objective.
+   identified as a key objective [Agentic-AI-Wireless].
 
    The Autonomic Networking Integrated Model and Approach (ANIMA)
    Working Group of the IETF developed the Autonomic Service Agent (ASA)
@@ -206,13 +206,13 @@ Table of Contents
    ANIMA: a software module that performs autonomic functions on network
    nodes.  The ANIMA Working Group is defining design guidelines,
    lifecycle management, authorization and coordination standards for
-   the ASA.
+   the ASA [ANIMA].
 
    IETF’ AI Preferences (AIPREF) Working Group is focused on
    standardizing a common vocabulary and mechanism through which users
    and systems can express their preferences regarding the use of their
-   content in the development, training, deployment and use of AI
-   models.
+   content in the development, training, deployment and use of AI models
+   [AIPREF].
 
 3.2.  Operation of Agentic AI for Network Management
 
@@ -495,6 +495,17 @@ Table of Contents
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
 9.2.  Informative References
+
+   [Agentic-AI-Wireless]
+              "Advanced Architectures Integrated with Agentic AI for
+              Next-Generation Wireless Networks", 2025,
+              <https://arxiv.org/html/2502.01089v3>.
+
+   [AIPREF]   "IETF AIPREF WG", 2025,
+              <https://datatracker.ietf.org/group/aipref/about/>.
+
+   [ANIMA]    "IETF ANIMA WG", 2025,
+              <https://datatracker.ietf.org/group/anima/about/>.
 
    [RFC7575]  Behringer, M., Pritikin, M., Bjarnason, S., Clemm, A.,
               Carpenter, B., Jiang, S., and L. Ciavaglia, "Autonomic
