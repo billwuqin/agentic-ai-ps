@@ -55,20 +55,31 @@ informative:
 
 --- abstract
 
-This document outlines the key objectives of introducing Agentic AI to the field of network management and highlights the fundamental issues with existing technologies that must be addressed to achieve these goals. It emphasizes the necessity for relevant groups within the IETF/IRTF and presents the core technological areas requiring standardization. The aim of Agentic AI is to facilitate a paradigm shift in which multiple autonomous AI agents collaborate to fully automate network operation, management and security.
+This document outlines the key objectives of introducing Agentic AI to the field of network management and highlights the fundamental issues with existing technologies that
+must be addressed to achieve these goals. It emphasizes the necessity for relevant groups within the IETF/IRTF and presents the core technological areas requiring
+standardization. The aim of Agentic AI is to facilitate a paradigm shift in which multiple autonomous AI agents collaborate to fully automate network operation, management
+and security.
 
 
 --- middle
 
 # Introduction
 
-The explosive growth of digital services and the increasing complexity of networks in 5G and future 6G environments demand real-time responsiveness, high efficiency and the ability to make autonomous decisions on a large scale from operational environments. To overcome the limitations of existing static automation methods and human-led Intent-Based Networking (IBN), a new Agentic AI-based paradigm is required. This involves introducing autonomous software entities that can interpret information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.
+The explosive growth of digital services and the increasing complexity of networks in 5G and future 6G environments demand real-time responsiveness, high efficiency and the
+ability to make autonomous decisions on a large scale from operational environments. To overcome the limitations of existing static automation methods and human-led Intent-Based Networking (IBN), a new Agentic AI-based paradigm is required. This involves introducing autonomous software entities that can interpret information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.
 
-Unlike traditional automation, which relies on pre-programmed rules, agentic AI uses autonomous decision-making capabilities to handle large-scale network activities and customer requests swiftly and accurately. These agents perform tasks such as network traffic management, fault resolution and customer interaction support continuously, executing responses that previously required manual human review or escalation.
+Unlike traditional automation, which relies on pre-programmed rules, agentic AI uses autonomous decision-making capabilities to handle large-scale network activities and
+customer requests swiftly and accurately. These agents perform tasks such as network traffic management, fault resolution and customer interaction support continuously,
+executing responses that previously required manual human review or escalation.
 
-Agentic AI uses large language models (LLMs) to encompass a wide variety of capabilities, such as reasoning, problem-solving, interacting with external environments and performing actions, which extend far beyond natural language processing. It can decompose tasks, breaking down complex objectives into specific tasks and subtasks to achieve them. This cognitive capacity enables a persistent cognitive cycle (observation, inference, action), continuously aligning network operations with high-level business intent.
+Agentic AI uses large language models (LLMs) to encompass a wide variety of capabilities, such as reasoning, problem-solving, interacting with external environments and
+performing actions, which extend far beyond natural language processing. It can decompose tasks, breaking down complex objectives into specific tasks and subtasks to
+achieve them. This cognitive capacity enables a persistent cognitive cycle (observation, inference, action), continuously aligning network operations with high-level
+business intent.
 
-When such autonomous agents are widely deployed across the communications and network domains, standardized protocols are essential to ensure interoperability and security between different vendor platforms and network domains. The collaborative nature of agent-based AI systems (multi-agent systems, or MAS) means that standardized agent-to-agent protocols (A2A protocols) must be defined to prevent silos forming within the system and to facilitate discovery, understanding and collaboration between agents.
+When such autonomous agents are widely deployed across the communications and network domains, standardized protocols are essential to ensure interoperability and security
+between different vendor platforms and network domains. The collaborative nature of agent-based AI systems (multi-agent systems, or MAS) means that standardized agent-to-
+agent protocols (A2A protocols) must be defined to prevent silos forming within the system and to facilitate discovery, understanding and collaboration between agents.
 
 
 # Conventions and Definitions
