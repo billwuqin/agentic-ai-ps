@@ -138,6 +138,7 @@ regarding the use of their content in the development, training, deployment and 
 The principal components of agentic AI can be broadly divided into the intelligence core and the execution tool domain.
 
 ### Intelligence core
+
 The intelligence core is responsible for an agent's decision-making and problem-solving capabilities. Large language models (LLMs) or specialized AI models form the basis
 of this core.
 Reasoning Engine/LLM: This constitutes the core of the agent's brain. It understands abstract objectives (intent) received from users or higher-level systems, creates step-
@@ -153,6 +154,7 @@ The tool Orchestrator manages the list of external tools (APIs, functions) avail
 appropriate and, during the execution phase, it is responsible for calling the tool and accurately configuring the necessary parameters.
 
 ### Execution & Interaction
+
 These components enable the agent to communicate with and make changes to the external environment (i.e. the network or system).
 
  - Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.
@@ -203,6 +205,7 @@ These components enable the agent to communicate with and make changes to the ex
 # Problem statement of existing techniques for Agentic AI
 
 ## Architectural bottlenecks and the failure of centralization
+
 Existing AI and automation systems have often relied on centralized infrastructure for data aggregation and heavy computing. However, these centralized models cannot handle
 the volume, velocity, and distributed nature of Agentic AI workloads.
 Centralized AI systems are constrained by central infrastructure, resulting in high latency due to round-trip times to the cloud. Such latency is unacceptable for real-time
@@ -212,6 +215,7 @@ This leverages local processing at the edge for low latency and fault tolerance,
 transcend conventional centralized SDN/management models.
 
 ## Absence of agent-to-agent (A2A) semantic interoperability
+
 Agentic systems are often built by different vendors using various frameworks, leading to fragmented and siloed system operations.
 Complex network management tasks require the decomposition of work and collaboration between specialized agents. Without standardized agent-to-agent (A2A) protocols,
 bespoke connectors become necessary to connect these fragmented systems, slowing down development and integration speeds.
