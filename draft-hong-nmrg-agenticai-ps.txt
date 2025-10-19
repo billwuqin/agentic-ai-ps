@@ -84,11 +84,14 @@ Table of Contents
      4.5.  Problems with the existing IBN system: Rigidity of the
            Intent Translation Engine (ITE)
      4.6.  ANIMA ASA's Problem: Cognitive Simplicity
-   5.  Objects of Agentic AI for network management
-     5.1.  Object 1 - Hyper-Autonomous Network Operations & Management
-     5.2.  Object 2 - Intelligent & Dynamic Resource Orchestration
-     5.3.  Object 3 - Predictive & Adaptive Network Security
-     5.4.  Object 4 - Enabling Novel Network Service Models
+   5.  Objectives of Agentic AI for network management
+     5.1.  Objective 1 - Hyper-Autonomous Network Operations &
+           Management
+     5.2.  Objective 2 - Intelligent & Dynamic Resource Orchestration
+     5.3.  Objective 3 - Predictive & Adaptive Network Security
+     5.4.  Objective 4 - Enabling Novel Network Service Models
+     5.5.  Objective 5 - Autonomous, High-Fidelity & Action-Aware
+           Network Measurement
    6.  Use case of Agentic AI for network management
      6.1.  Use case #1
      6.2.  Use case #2
@@ -390,9 +393,9 @@ Table of Contents
    Protocol; GRASP), demonstrating the necessity for a dedicated
    protocol layer that extends beyond the existing ANIMA framework.
 
-5.  Objects of Agentic AI for network management
+5.  Objectives of Agentic AI for network management
 
-5.1.  Object 1 - Hyper-Autonomous Network Operations & Management
+5.1.  Objective 1 - Hyper-Autonomous Network Operations & Management
 
    Beyond minimizing human intervention, it must implement a Self-
    Driving network that autonomously recognises, diagnoses, infers, and
@@ -417,7 +420,7 @@ Table of Contents
       protocols, QoS policies, security rules, and other elements to
       achieve them.
 
-5.2.  Object 2 - Intelligent & Dynamic Resource Orchestration
+5.2.  Objective 2 - Intelligent & Dynamic Resource Orchestration
 
    To address unpredictable traffic demands such as 6G, holographic
    communications, and large-scale IoT, network resources (computing,
@@ -440,7 +443,7 @@ Table of Contents
       and user mobility, AI agents dynamically reallocate workloads to
       optimal edge nodes while ensuring service continuity.
 
-5.3.  Object 3 - Predictive & Adaptive Network Security
+5.3.  Objective 3 - Predictive & Adaptive Network Security
 
    Beyond defending against known attack patterns, AI agents
    autonomously detect unknown zero-day attacks or advanced persistent
@@ -459,7 +462,7 @@ Table of Contents
       in real time based on attack type and intensity, thereby
       minimizing the attack surface.
 
-5.4.  Object 4 - Enabling Novel Network Service Models
+5.4.  Objective 4 - Enabling Novel Network Service Models
 
    By transforming the network itself into a single, vast distributed AI
    platform, it enables new communication services and business models
@@ -477,6 +480,39 @@ Table of Contents
       “purpose” conveyed by data rather than the bits themselves,
       enabling ultra-efficient communication that achieves maximum
       effect with minimal data transmission.
+
+5.5.  Objective 5 - Autonomous, High-Fidelity & Action-Aware Network
+      Measurement
+
+   To turn raw network telemetry into trustworthy, context-rich insight
+   that continuously retrains itself, explains its own uncertainty, and
+   feeds closed-loop control without human analysts.
+
+   Key Features: - Generative Telemetry Synthesis & Gap-Filling: Gen-AI
+   models learn multi-modal telemetry (packets, flow records, SNMP,
+   syslogs, DPI, spectrum scans) and hallucinate statistically faithful
+   “missing data” where sensors are sparse or silent, delivering 100 %
+   coverage at any time/space scale.
+
+   *  Semantic Anomaly Narratives & Root-Cause Metrics: Instead of
+      threshold alerts, the model outputs human-readable stories
+      (“Between 02:13-02:19 UTC, TCP RTT on slice-C rose 38 % because 17
+      % of ECN-marked packets were re-routed via the Seattle POP due to
+      a mis-announced BGP community”).  Each sentence is back-traced to
+      verifiable measurement samples.
+
+   *  Self-Driving Measurement Campaigns: The AI translates high-level
+      intents (“tell me if user-perceived 4 K latency could exceed 150
+      ms during the next football final”) into dynamic sampler
+      schedules, probe paths, and packet structures; it launches the
+      campaign, stops when statistical confidence is reached, and
+      releases resources back to the data plane.
+
+   *  Counterfactual & Predictive “What-if” Metrics: Given a proposed
+      config change (new AQM, additional slice, 400 GbE upgrade), the
+      generator produces the expected delay/loss/jitter distributions
+      before any byte is moved, letting operators compare KPI deltas
+      without real-world probing.
 
 6.  Use case of Agentic AI for network management
 
