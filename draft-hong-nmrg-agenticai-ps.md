@@ -162,6 +162,8 @@ These components enable the agent to communicate with and make changes to the ex
  - Sensing/observation mechanism: The channel through which the agent verifies execution results and collects the current environmental state. This involves more than just
    invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.
 
+~~~~
+
 +----------------------------------------------------------------+
 |                                                                |
 |   +--------------------------+                                 |
@@ -196,6 +198,7 @@ These components enable the agent to communicate with and make changes to the ex
 |                                                                |
 +----------------------------------------------------------------+
 
+~~~~
 
 # Problem statement of existing techniques for Agentic AI
 
