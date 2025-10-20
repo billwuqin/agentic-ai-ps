@@ -384,7 +384,67 @@ Legend: LPI - Language Programming Interface
 
  Step e. After L3VPN Service is delivered successfully, the Network Management AI Agent will use LPI to return success results.
 
-## Use case #2
+## Use case Cross-layer and Cross-domain Multi-Agent communication for Complaint handling
+
+   In this scenario, automotive companies centrally collect complaints
+   from their customers (drivers) and use the operator’s complaint
+   system to feedback issues to the operator.  The operator's BSS
+   trouble ticket system generates tickets from these complaints and
+   dispatches them to the OSS.  The integrated vehicle networking
+   complaint handling agent within the OSS analyzes the trouble tickets
+   and performs fault localization. The ticket will be sent to
+   the corresponding vehicle networking trouble ticket agent within OSS
+   based on whether fault localization is within or beyond specific
+   maintenance domain.
+
+   The vehicle networking trouble ticket agent
+   within the OSS will parse the ticket into multiple multi-steps workflow and
+   interact with the IP network agent and mobile network agent
+   within its management domain to resolve the problem.
+
+~~~~
+           +-----------------------+
+           |Automobile Manufacturer|
+           |    Complaints         |
+           +-----------------------+
+                      |
+           +----------------------+
+           | BSS Trouble tickets  |
+           |      System          |
+           +----------------------+
+                      |
+    +-------------------------------------------+
+    |                 OSS                       |
+    |                                           |
+    | +---------------+       +----------------+|
+    | |   Complaint   |       |   Complaint    ||
+    | | Handling Agent|-------| Handling Agent ||
+    | |  In Domain A  |       |   In Domain B  ||
+    | +-------+-------+       +----------------+|
+    +---------+---------------------------------+
+           +--+-----------------------+
+      +----+---------+         +------+-------+
+      |   Mobile     |         |    IP        |
+      |   Network    |         |   Network    |
+      |   Agent      |         |   Agent      |
+      +--------------+         +--------------+
+~~~~
+{: #iov-user-complaints title="IoV User Complaints Handling"}
+
+o Tasks are triggered by natural language;
+  * Complaints usually come from end-users or enterprises,
+    - who may not have a deep understanding of network
+	- sometimes are unable to provide accurate descriptions
+
+o Tasks possess both abstraction and expertise;
+  * Abstraction: complaint content is unpredictable and the involved domains cannot be anticipated
+  * Expertise: The final closed-loop of the task depends on the network
+
+o Tasks involve cross-layer and cross-domain aspects.
+  * Cross-Layer: BSS/OSS -> Network
+  * Cross-domain:
+    - Technical domains (wireless network domain, backhaul network domain)
+    - management & maintenance domains (i.e. across provinces and cities)
 
 ## Use case #3
 
