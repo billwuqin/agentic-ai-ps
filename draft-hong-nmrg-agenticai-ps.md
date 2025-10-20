@@ -274,7 +274,7 @@ beyond the existing ANIMA framework.
 
 # Objectives of Agentic AI for Operations & Management
 
-## Objective 1 - Hyper-Autonomous Network Operations & Management
+## Objective 1 - Autonomous Network Operations & Management
 
 Beyond minimizing human intervention, it must implement a Autonomous Driving Netowrk (defined in TMF)  that autonomously recognises,
 diagnoses, infers, and resolves issues even in unpredictable situations.
@@ -348,6 +348,8 @@ Key Features:
 
 # Use cases of Agentic AI for Operations & Management
 
+Different use cases for Agentic AI on Operation & Management can be identified, as described in the following sections.
+
 ## Intent Based Service Delivery
 
 Below is the diagram showcasing how network management AI agent takes effect on the intent based service delivery process.
@@ -387,13 +389,13 @@ Legend: LPI - Language Programming Interface
 
 
  Step a. L3VPN Service Delivery Application at the OSS layer uses Language Programming Interface (LPI)
-         to send service intent request "Create L3VPN service with 2 VPN sites in Beijing
-	     and Shanghai using L3SM Service Model".
+         to send service intent request "Create L3VPN service with 2 VPN sites in London
+	     and Paris using L3SM Service Model".
 
- Step b. The Network Management AI Agent recognizes Intent and identify user's objective "VPN Service Creation".
+ Step b. The Network Management AI Agent looks up knowledge base to understand the intent and identify user's objective "VPN Service Creation".
 
- Step c. The Network Management AI Agent interacts with Knowledge base for expert experience and looks up thought of chain
-         related to "VPN Service Creation". And then the Knowledge base return results to the Network management AI Agent.
+ Step c. The Network Management AI Agent further interacts with Knowledge base for expert experience and looks up thought of chain
+         related to "VPN Service Creation". And then the Knowledge base returns results to the Network management AI Agent.
 
  Step d. The Network Management AI Agent decomposes user intent and break down the tasks into operational workflow including
          configuration generation, configuration validation, configuration distribution. For configuration validation, it will
