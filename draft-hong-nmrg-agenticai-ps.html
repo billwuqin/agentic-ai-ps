@@ -1639,9 +1639,10 @@ delay/loss/jitter distributions before any byte is moved, letting operators comp
         <h3 id="name-intent-based-service-delive">
 <a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-intent-based-service-delive" class="section-name selfRef">Intent Based Service Delivery</a>
         </h3>
-<p id="section-6.1-1">Below is the diagram showcasing how network management AI agent takes effect on the intent based service delivery process.
-~~~~<a href="#section-6.1-1" class="pilcrow">¶</a></p>
-<p id="section-6.1-2">+----------------------------------------------------------+
+<p id="section-6.1-1">Below is the diagram showcasing how network management AI agent takes effect on the intent based service delivery process.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-6.1-2">
+<pre>
+ +----------------------------------------------------------+
  |            L3VPN Service Delivery Application            |
  +-------------------------+--------------------------------+
                            |
@@ -1661,22 +1662,26 @@ delay/loss/jitter distributions before any byte is moved, letting operators comp
  | Digital &lt;--&gt;  | +----------++----------+ +------------+| |
  | Twin    |  |  +----------------------------------------+ |
  | Tools   |  |                                             |
- +---------+  +---------------------------------------------+<a href="#section-6.1-2" class="pilcrow">¶</a></p>
-<p id="section-6.1-3">+----------------------------------------------------------+
+ +---------+  +---------------------------------------------+
+
+ +----------------------------------------------------------+
  |            Network  Infrastructure                       |
- +----------------------------------------------------------+<a href="#section-6.1-3" class="pilcrow">¶</a></p>
-<p id="section-6.1-4">Legend: LPI - Language Programming Interface<a href="#section-6.1-4" class="pilcrow">¶</a></p>
-<p id="section-6.1-5">~~~~<a href="#section-6.1-5" class="pilcrow">¶</a></p>
-<p id="section-6.1-6">a. L3VPN Service Delivery Application uses Language Programming Interface (LPI)
-    to send service intent request "Create L3VPN service with 2 VPN sites in Beijing
-           and Shanghai using L3SM Service Model".
- b. The Network Management AI Agent recognizes Intent and identify user's objective "VPN Service Creation".
- c. The Network Management AI Agent interacts with Knowledge base for expert experience and looks up thought of chain
-    related to "VPN Service Creation". And then the Knowledge base return results to the Network management AI Agent.
- d. The Network Management AI Agent decomposes user intent and break down the tasks into operational workflow including
-    configuration generation, configuration validation, configuration distribution. For configuration validation, it will
-           interact with Network Digital Twin tools to obtain the validation results.
- e. After L3VPN Service is delivered successfully, the Network Management AI Agent will use LPI to return success results.<a href="#section-6.1-6" class="pilcrow">¶</a></p>
+ +----------------------------------------------------------+
+
+Legend: LPI - Language Programming Interface
+
+</pre><a href="#section-6.1-2" class="pilcrow">¶</a>
+</div>
+<p id="section-6.1-3">Step a. L3VPN Service Delivery Application uses Language Programming Interface (LPI)
+         to send service intent request "Create L3VPN service with 2 VPN sites in Beijing
+             and Shanghai using L3SM Service Model".<a href="#section-6.1-3" class="pilcrow">¶</a></p>
+<p id="section-6.1-4">Step b. The Network Management AI Agent recognizes Intent and identify user's objective "VPN Service Creation".<a href="#section-6.1-4" class="pilcrow">¶</a></p>
+<p id="section-6.1-5">Step c. The Network Management AI Agent interacts with Knowledge base for expert experience and looks up thought of chain
+         related to "VPN Service Creation". And then the Knowledge base return results to the Network management AI Agent.<a href="#section-6.1-5" class="pilcrow">¶</a></p>
+<p id="section-6.1-6">Step d. The Network Management AI Agent decomposes user intent and break down the tasks into operational workflow including
+         configuration generation, configuration validation, configuration distribution. For configuration validation, it will
+             interact with Network Digital Twin tools to obtain the validation results.<a href="#section-6.1-6" class="pilcrow">¶</a></p>
+<p id="section-6.1-7">Step e. After L3VPN Service is delivered successfully, the Network Management AI Agent will use LPI to return success results.<a href="#section-6.1-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="use-case-2">
