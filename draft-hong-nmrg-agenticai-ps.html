@@ -1235,7 +1235,7 @@ and security.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
                 <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-intent-based-service-delive" class="internal xref">Intent Based Service Delivery</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
-                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-use-case-2" class="internal xref">Use case #2</a></p>
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-use-case-cross-layer-and-cr" class="internal xref">Use case Cross-layer and Cross-domain Multi-Agent communication for Complaint handling</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.3">
                 <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="auto internal xref">6.3</a>.  <a href="#name-use-case-3" class="internal xref">Use case #3</a></p>
@@ -1684,11 +1684,72 @@ Legend: LPI - Language Programming Interface
 <p id="section-6.1-7">Step e. After L3VPN Service is delivered successfully, the Network Management AI Agent will use LPI to return success results.<a href="#section-6.1-7" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="use-case-2">
+<div id="use-case-cross-layer-and-cross-domain-multi-agent-communication-for-complaint-handling">
 <section id="section-6.2">
-        <h3 id="name-use-case-2">
-<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-use-case-2" class="section-name selfRef">Use case #2</a>
-      </h3>
+        <h3 id="name-use-case-cross-layer-and-cr">
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-use-case-cross-layer-and-cr" class="section-name selfRef">Use case Cross-layer and Cross-domain Multi-Agent communication for Complaint handling</a>
+        </h3>
+<p id="section-6.2-1">In this scenario, automotive companies centrally collect complaints
+   from their customers (drivers) and use the operator’s complaint
+   system to feedback issues to the operator.  The operator's BSS
+   trouble ticket system generates tickets from these complaints and
+   dispatches them to the OSS.  The integrated vehicle networking
+   complaint handling agent within the OSS analyzes the trouble tickets
+   and performs fault localization. The ticket will be sent to
+   the corresponding vehicle networking trouble ticket agent within OSS
+   based on whether fault localization is within or beyond specific
+   maintenance domain.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
+<p id="section-6.2-2">The vehicle networking trouble ticket agent
+   within the OSS will parse the ticket into multiple multi-steps workflow and
+   interact with the IP network agent and mobile network agent
+   within its management domain to resolve the problem.<a href="#section-6.2-2" class="pilcrow">¶</a></p>
+<span id="name-iov-user-complaints-handlin"></span><div id="iov-user-complaints">
+<figure id="figure-1">
+          <div class="alignLeft art-text artwork" id="section-6.2-3.1">
+<pre>
+           +-----------------------+
+           |Automobile Manufacturer|
+           |    Complaints         |
+           +-----------------------+
+                      |
+           +----------------------+
+           | BSS Trouble tickets  |
+           |      System          |
+           +----------------------+
+                      |
+    +-------------------------------------------+
+    |                 OSS                       |
+    |                                           |
+    | +---------------+       +----------------+|
+    | |   Complaint   |       |   Complaint    ||
+    | | Handling Agent|-------| Handling Agent ||
+    | |  In Domain A  |       |   In Domain B  ||
+    | +-------+-------+       +----------------+|
+    +---------+---------------------------------+
+           +--+-----------------------+
+      +----+---------+         +------+-------+
+      |   Mobile     |         |    IP        |
+      |   Network    |         |   Network    |
+      |   Agent      |         |   Agent      |
+      +--------------+         +--------------+
+</pre>
+</div>
+<figcaption><a href="#figure-1" class="selfRef">Figure 1</a>:
+<a href="#name-iov-user-complaints-handlin" class="selfRef">IoV User Complaints Handling</a>
+          </figcaption></figure>
+</div>
+<p id="section-6.2-4">o Tasks are triggered by natural language;
+  * Complaints usually come from end-users or enterprises,
+    - who may not have a deep understanding of network
+        - sometimes are unable to provide accurate descriptions<a href="#section-6.2-4" class="pilcrow">¶</a></p>
+<p id="section-6.2-5">o Tasks possess both abstraction and expertise;
+  * Abstraction: complaint content is unpredictable and the involved domains cannot be anticipated
+  * Expertise: The final closed-loop of the task depends on the network<a href="#section-6.2-5" class="pilcrow">¶</a></p>
+<p id="section-6.2-6">o Tasks involve cross-layer and cross-domain aspects.
+  * Cross-Layer: BSS/OSS -&gt; Network
+  * Cross-domain:
+    - Technical domains (wireless network domain, backhaul network domain)
+    - management &amp; maintenance domains (i.e. across provinces and cities)<a href="#section-6.2-6" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="use-case-3">
