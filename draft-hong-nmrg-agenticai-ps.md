@@ -44,7 +44,8 @@ author:
     email: bill.wu@huawei.com
  -
     fullname: Benoit Claise
-    organization: Individual
+    organization: Everything OPS
+    country: Belgium
     email: benoit@everything-ops.net
 
 normative:
@@ -82,7 +83,7 @@ The explosive growth of digital services and the increasing complexity of networ
 ability to make autonomous decisions on a large scale from operational environments. To overcome the limitations of existing static automation methods and human-led Intent-Based Networking (IBN), a new Agentic AI-based paradigm is required. This involves introducing autonomous software entities that can interpret information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.
 
 Unlike traditional automation, which relies on pre-programmed rules, agentic AI uses autonomous decision-making capabilities to handle large-scale network activities and
-customer requests swiftly and accurately. These agents perform tasks such as network traffic management, fault resolution and customer interaction support continuously,
+customer requests swiftly and accurately. These agents perform tasks such as network traffic management, fault resolution, and customer interaction support, continuously
 executing responses that previously required manual human review or escalation.
 
 Agentic AI uses large language models (LLMs) to encompass a wide variety of capabilities, such as reasoning, problem-solving, interacting with external environments and
@@ -99,11 +100,12 @@ agent protocols (A2A protocols) must be defined to prevent silos forming within 
 
 {::boilerplate bcp14-tagged}
 
-# Agentic AI for network management
+# Agentic AI for Network mMnagement
 
-## Role of Agentic AI in network management
+## Role of Agentic AI in Network Operations
 
-The complexity of network management is increasing exponentially with the advent of 5G and future 6G services. This makes it increasingly difficult for existing automation
+The complexity of network management and network operations are increasing exponentially, due to the increased size of networks and the increased frequency of change,
+for for the new 5G and future 6G services. This makes it increasingly difficult for existing automation
 techniques to meet the requirements for operational efficiency and service quality. Consequently, Agentic AI is an essential technological advancement for the realization
 of autonomous networks.
 
@@ -113,8 +115,7 @@ operating within an autonomous, closed-loop framework. This framework enables th
 using various tools and APIs. This autonomy enables it to perform complex, multi-step processes such as software development, data analysis and network management.
 
 The aim of autonomous networks is to leverage the capabilities of Agentic AI in order to transition operations and maintenance from static, human-managed, rule-based
-automation to dynamic, intent-based automation that is governed by humans. The ultimate goal is to reduce management costs and complexity as the complexity of 5G services
-increases, enabling rapid business optimization at unprecedented levels.
+automation to dynamic, intent-based automation that is governed by humans. The ultimate goal is to reduce management costs and complexity, enabling rapid business optimization at unprecedented levels.
 
 The primary objective of Agentic AI is to enable autonomous decision-making and the resolution of complex, multi-domain tasks. This is crucial in bringing operations closer
 to the level of autonomy that Agentic AI aims to achieve, by facilitating cross-domain collaboration. To achieve this, Agentic AI must align network capabilities with
@@ -201,10 +202,11 @@ These components enable the agent to communicate with and make changes to the ex
 +----------------------------------------------------------------+
 
 ~~~~
+{: #fig-execution-interaction title="Execution & Interaction" artwork-align="center"}
 
-# Problem statement of existing techniques for Agentic AI
+# Problem Statement of Existing Techniques for Agentic AI
 
-## Architectural bottlenecks and the failure of centralization
+## Architectural Bottlenecks and the Failure of Centralization
 
 Existing AI and automation systems have often relied on centralized infrastructure for data aggregation and heavy computing. However, these centralized models cannot handle
 the volume, velocity, and distributed nature of Agentic AI workloads.
@@ -214,7 +216,7 @@ The inherent limitations of such centralized models (single point of failure (SP
 This leverages local processing at the edge for low latency and fault tolerance, requiring the standardization of distributed control and communication mechanisms that
 transcend conventional centralized SDN/management models.
 
-## Absence of agent-to-agent (A2A) semantic interoperability
+## Absence of agent-to-agent (A2A) Semantic Interoperability
 
 Agentic systems are often built by different vendors using various frameworks, leading to fragmented and siloed system operations.
 Complex network management tasks require the decomposition of work and collaboration between specialized agents. Without standardized agent-to-agent (A2A) protocols,
@@ -223,7 +225,7 @@ bespoke connectors become necessary to connect these fragmented systems, slowing
 Standardization must define consistent payloads and interfaces that support real-time interactions between systems, enabling agents to discover, understand, and collaborate
 with one another regardless of their underlying implementations.
 
-## Lack of dynamic trust and accountability in autonomous behavior
+## Lack of Dynamic Trust and Accountability in Autonomous Behavior
 
 The introduction of AI agents as autonomous entities performing actions at machine speed presents significant security and governance challenges.
 Traditional identity and access management (IAM) focuses on human users or predefined roles. However, autonomous agents operate with dynamic intent, require context-aware
@@ -232,17 +234,17 @@ Without a robust Zero Trust framework specifically designed for non-human autono
 autonomous systems could outpace human control capabilities.
 
 
-## Real-time data validity and resilience issues
+## Real-time Data Validity and Resilience Issues
 
 The decision-making of AI agents is determined by the quality of the data they receive. In a network environment, data quality is of paramount importance.
-Incomplete, delayed, or corrupted data feeds can lead to severe operational or financial losses when agents take autonomous actions (e.g., traffic rerouting, forced
+Incomplete, delayed, semantic-less, context-less, or corrupted data feeds can lead to severe operational or financial losses when agents take autonomous actions (e.g., traffic rerouting, forced
 execution of financial transactions).
 Therefore, it must extend beyond the current focus on bandwidth and speed to include quality verification of the data agents rely upon and resilience of service paths. This
 is essential to meet the requirements of continuously operating intelligent agents.
 
-## Problems with the existing IBN system: Rigidity of the Intent Translation Engine (ITE)
+## Problems with the Existing IBN System: Rigidity of the Intent Translation Engine (ITE)
 
-Existing IBN systems rely on the Intent Translation Engine (ITE) or the Intent-Based System (IBS) spatial functionality to bridge the gap between the intent user and the
+Existing IBN systems rely on the Intent Translation Engine (ITE) or the Intent-Based System (IBS) spatial functionality to bridge the gap between the business intent and the
 network operational infrastructure. This translation is typically driven by predefined data models such as YANG models and lacks the necessary adaptive flexibility when
 unforeseen conditions arise.
 IBN fundamentally shifts operational modes to a dynamic intent-based approach, yet retains the inherent limitation that control remains under human oversight.
@@ -258,11 +260,11 @@ ANIMA's ASA is conceptually a precursor to Agentic AI, but lacks a cognitive cor
 Agentic AI introduces LLM-based planning and tool-use capabilities that require complex, semantic negotiation (A2A) beyond simple information exchange (GeneRic Autonomic
 Signaling Protocol; GRASP), demonstrating the necessity for a dedicated protocol layer that extends beyond the existing ANIMA framework.
 
-# Objectives of Agentic AI for network management
+# Objectives of Agentic AI for Operations & Management
 
 ## Objective 1 - Hyper-Autonomous Network Operations & Management
 
-Beyond minimizing human intervention, it must implement a Self-Driving network that autonomously recognises, diagnoses, infers, and resolves issues even in unpredictable
+Beyond minimizing human intervention, it must implement a Autonomous Driving Netowrk (defined in TMF)  that autonomously recognises, diagnoses, infers, and resolves issues even in unpredictable
 situations.
 
 Key Features:
@@ -331,7 +333,7 @@ Key Features:
 - Counterfactual & Predictive “What-if” Metrics: Given a proposed config change (new AQM, additional slice, 400 GbE upgrade), the generator produces the expected
   delay/loss/jitter distributions before any byte is moved, letting operators compare KPI deltas without real-world probing.
 
-# Use cases of Agentic AI for network management
+# Use cases of Agentic AI for Operations & Management
 
 ## Intent Based Service Delivery
 
@@ -368,6 +370,8 @@ Below is the diagram showcasing how network management AI agent takes effect on 
 Legend: LPI - Language Programming Interface
 
 ~~~~
+{: #fig-intent-based-services title="Intent Based Service Delivery" artwork-align="center"}
+
 
  Step a. L3VPN Service Delivery Application at the OSS layer uses Language Programming Interface (LPI)
          to send service intent request "Create L3VPN service with 2 VPN sites in Beijing
@@ -429,7 +433,8 @@ Legend: LPI - Language Programming Interface
       |   Agent      |         |   Agent      |
       +--------------+         +--------------+
 ~~~~
-{: #iov-user-complaints title="IoV User Complaints Handling"}
+{: #fig-iov-user-complaints title="IoV User Complaints Handling" artwork-align="center"}
+
 
 o Tasks are triggered by natural language
 
@@ -489,6 +494,8 @@ o Tasks involve cross-layer and cross-domain aspects
  |                                    +-----------------+           |
  +------------------------------------------------------------------+
 ~~~~
+{: #fig-ai-agent-driven title="AI Agent Driven Network Management" artwork-align="center"}
+
 
 Traditional network operation and maintenance require extensive human oversight and are constrained
 by predefined policies, limiting real-time adaptability. Network management AI agents at the network
