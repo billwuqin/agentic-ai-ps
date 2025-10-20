@@ -618,20 +618,33 @@ Table of Contents
 
                    Figure 1: IoV User Complaints Handling
 
-   o Tasks are triggered by natural language; * Complaints usually come
-   from end-users or enterprises, - who may not have a deep
-   understanding of network - sometimes are unable to provide accurate
-   descriptions
+   o Tasks are triggered by natural language
 
-   o Tasks possess both abstraction and expertise; * Abstraction:
-   complaint content is unpredictable and the involved domains cannot be
-   anticipated * Expertise: The final closed-loop of the task depends on
-   the network
+   *  Complaints usually come from end-users or enterprises
 
-   o Tasks involve cross-layer and cross-domain aspects.  * Cross-Layer:
-   BSS/OSS -> Network * Cross-domain: - Technical domains (wireless
-   network domain, backhaul network domain) - management & maintenance
-   domains (i.e. across provinces and cities)
+      -  who may not have a deep understanding of network
+
+         o  sometimes are unable to provide accurate descriptions
+
+   o Tasks possess both abstraction and expertise
+
+   *  Abstraction: complaint content is unpredictable and the involved
+      domains cannot be anticipated
+
+   *  Expertise: The final closed-loop of the task depends on the
+      network
+
+   o Tasks involve cross-layer and cross-domain aspects
+
+   *  Cross-Layer: BSS/OSS -> Network
+
+   *  Cross-domain:
+
+      -  Technical domains (wireless network domain, backhaul network
+         domain)
+
+      -  management & maintenance domains (i.e. across provinces and
+         cities)
 
 6.3.  Use case #3
 
