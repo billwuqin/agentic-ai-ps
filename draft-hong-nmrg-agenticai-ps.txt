@@ -9,7 +9,7 @@ Expires: 23 April 2026                               DONG-EUI University
                                                                    Q. Wu
                                                                   Huawei
                                                                B. Claise
-                                                              Individual
+                                                          Everything OPS
                                                          20 October 2025
 
 
@@ -70,21 +70,21 @@ Table of Contents
 
    1.  Introduction
    2.  Conventions and Definitions
-   3.  Agentic AI for network management
-     3.1.  Role of Agentic AI in network management
+   3.  Agentic AI for Network mMnagement
+     3.1.  Role of Agentic AI in Network Operations
      3.2.  Operation of Agentic AI for Network Management
        3.2.1.  Intelligence core
        3.2.2.  Execution & Interaction
-   4.  Problem statement of existing techniques for Agentic AI
-     4.1.  Architectural bottlenecks and the failure of centralization
-     4.2.  Absence of agent-to-agent (A2A) semantic interoperability
-     4.3.  Lack of dynamic trust and accountability in autonomous
-           behavior
-     4.4.  Real-time data validity and resilience issues
-     4.5.  Problems with the existing IBN system: Rigidity of the
+   4.  Problem Statement of Existing Techniques for Agentic AI
+     4.1.  Architectural Bottlenecks and the Failure of Centralization
+     4.2.  Absence of agent-to-agent (A2A) Semantic Interoperability
+     4.3.  Lack of Dynamic Trust and Accountability in Autonomous
+           Behavior
+     4.4.  Real-time Data Validity and Resilience Issues
+     4.5.  Problems with the Existing IBN System: Rigidity of the
            Intent Translation Engine (ITE)
      4.6.  ANIMA ASA's Problem: Cognitive Simplicity
-   5.  Objectives of Agentic AI for network management
+   5.  Objectives of Agentic AI for Operations & Management
      5.1.  Objective 1 - Hyper-Autonomous Network Operations &
            Management
      5.2.  Objective 2 - Intelligent & Dynamic Resource Orchestration
@@ -92,7 +92,7 @@ Table of Contents
      5.4.  Objective 4 - Enabling Novel Network Service Models
      5.5.  Objective 5 - Autonomous, High-Fidelity & Action-Aware
            Network Measurement
-   6.  Use cases of Agentic AI for network management
+   6.  Use cases of Agentic AI for Operations & Management
      6.1.  Intent Based Service Delivery
      6.2.  Cross-layer and Cross-domain Multi-Agent communication for
            Complaint handling
@@ -122,8 +122,8 @@ Table of Contents
    agentic AI uses autonomous decision-making capabilities to handle
    large-scale network activities and customer requests swiftly and
    accurately.  These agents perform tasks such as network traffic
-   management, fault resolution and customer interaction support
-   continuously, executing responses that previously required manual
+   management, fault resolution, and customer interaction support,
+   continuously executing responses that previously required manual
    human review or escalation.
 
    Agentic AI uses large language models (LLMs) to encompass a wide
@@ -153,16 +153,18 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-3.  Agentic AI for network management
+3.  Agentic AI for Network mMnagement
 
-3.1.  Role of Agentic AI in network management
+3.1.  Role of Agentic AI in Network Operations
 
-   The complexity of network management is increasing exponentially with
-   the advent of 5G and future 6G services.  This makes it increasingly
-   difficult for existing automation techniques to meet the requirements
-   for operational efficiency and service quality.  Consequently,
-   Agentic AI is an essential technological advancement for the
-   realization of autonomous networks.
+   The complexity of network management and network operations are
+   increasing exponentially, due to the increased size of networks and
+   the increased frequency of change, for for the new 5G and future 6G
+   services.  This makes it increasingly difficult for existing
+   automation techniques to meet the requirements for operational
+   efficiency and service quality.  Consequently, Agentic AI is an
+   essential technological advancement for the realization of autonomous
+   networks.
 
    Agentic AI refers to intelligent systems that can act autonomously to
    achieve specific business objectives with minimal human supervision.
@@ -180,9 +182,8 @@ Table of Contents
    Agentic AI in order to transition operations and maintenance from
    static, human-managed, rule-based automation to dynamic, intent-based
    automation that is governed by humans.  The ultimate goal is to
-   reduce management costs and complexity as the complexity of 5G
-   services increases, enabling rapid business optimization at
-   unprecedented levels.
+   reduce management costs and complexity, enabling rapid business
+   optimization at unprecedented levels.
 
    The primary objective of Agentic AI is to enable autonomous decision-
    making and the resolution of complex, multi-domain tasks.  This is
@@ -267,43 +268,45 @@ Table of Contents
       continuously draws network events, sensor data and similar inputs
       into a feedback loop.
 
-   +----------------------------------------------------------------+
-   |                                                                |
-   |   +--------------------------+                                 |
-   |   |  1.GOAL / INTENT(Input)  |                                 |
-   |   +------------------|-------+                                 |
-   |                      v                                         |
-   |            +---------+----------------+                        |
-   |            |    2.AI AGENT(Brain)     |                        |
-   |            |  (LLM/Reasoning Engine)  |                        |
-   |            +---|-----------------|----+                        |
-   |                |  Memory/Context |    |                        |
-   |                +-----------------+    |                        |
-   |                ^                      v                        |
-   |      +---------|----------+    +------|------------+           |
-   |      | 4.REFLECT(Compare) |    |  3.PLAN(Sequence) |           |
-   |      | (Evaluate Outcome) |<---| (Action Breakdown)|           |
-   |      +---------|----------+    +------|------------+           |
-   |                |                      v                        |
-   |                |   +------------------+----------------------+ |
-   |                +---| 5.EXECUTE(Action) via Tool Orchestrator | |
-   |                    +------------------|----------------------+ |
-   |                                       v                        |
-   |                 +---------------------+-----------------+      |
-   |                 | 6.TOOL USE(API Calls & Configuration) |      |
-   |                 |     (RESTCONF, Monitoring, etc.)      |      |
-   |                 +-----------|-------------------|-------+      |
-   |                             v                   ^              |
-   |                 +-----------+-------------------+--------+     |
-   |                 |   7.NETWORK ENVIRONMENT (The World)    |     |
-   |                 | (Apply Changes & Sense/Observe State)  |     |
-   |                 +----------------------------------------+     |
-   |                                                                |
-   +----------------------------------------------------------------+
+    +----------------------------------------------------------------+
+    |                                                                |
+    |   +--------------------------+                                 |
+    |   |  1.GOAL / INTENT(Input)  |                                 |
+    |   +------------------|-------+                                 |
+    |                      v                                         |
+    |            +---------+----------------+                        |
+    |            |    2.AI AGENT(Brain)     |                        |
+    |            |  (LLM/Reasoning Engine)  |                        |
+    |            +---|-----------------|----+                        |
+    |                |  Memory/Context |    |                        |
+    |                +-----------------+    |                        |
+    |                ^                      v                        |
+    |      +---------|----------+    +------|------------+           |
+    |      | 4.REFLECT(Compare) |    |  3.PLAN(Sequence) |           |
+    |      | (Evaluate Outcome) |<---| (Action Breakdown)|           |
+    |      +---------|----------+    +------|------------+           |
+    |                |                      v                        |
+    |                |   +------------------+----------------------+ |
+    |                +---| 5.EXECUTE(Action) via Tool Orchestrator | |
+    |                    +------------------|----------------------+ |
+    |                                       v                        |
+    |                 +---------------------+-----------------+      |
+    |                 | 6.TOOL USE(API Calls & Configuration) |      |
+    |                 |     (RESTCONF, Monitoring, etc.)      |      |
+    |                 +-----------|-------------------|-------+      |
+    |                             v                   ^              |
+    |                 +-----------+-------------------+--------+     |
+    |                 |   7.NETWORK ENVIRONMENT (The World)    |     |
+    |                 | (Apply Changes & Sense/Observe State)  |     |
+    |                 +----------------------------------------+     |
+    |                                                                |
+    +----------------------------------------------------------------+
 
-4.  Problem statement of existing techniques for Agentic AI
+                     Figure 1: Execution & Interaction
 
-4.1.  Architectural bottlenecks and the failure of centralization
+4.  Problem Statement of Existing Techniques for Agentic AI
+
+4.1.  Architectural Bottlenecks and the Failure of Centralization
 
    Existing AI and automation systems have often relied on centralized
    infrastructure for data aggregation and heavy computing.  However,
@@ -321,7 +324,7 @@ Table of Contents
    control and communication mechanisms that transcend conventional
    centralized SDN/management models.
 
-4.2.  Absence of agent-to-agent (A2A) semantic interoperability
+4.2.  Absence of agent-to-agent (A2A) Semantic Interoperability
 
    Agentic systems are often built by different vendors using various
    frameworks, leading to fragmented and siloed system operations.
@@ -336,7 +339,7 @@ Table of Contents
    discover, understand, and collaborate with one another regardless of
    their underlying implementations.
 
-4.3.  Lack of dynamic trust and accountability in autonomous behavior
+4.3.  Lack of Dynamic Trust and Accountability in Autonomous Behavior
 
    The introduction of AI agents as autonomous entities performing
    actions at machine speed presents significant security and governance
@@ -349,36 +352,36 @@ Table of Contents
    breaches or manipulation where autonomous systems could outpace human
    control capabilities.
 
-4.4.  Real-time data validity and resilience issues
+4.4.  Real-time Data Validity and Resilience Issues
 
    The decision-making of AI agents is determined by the quality of the
    data they receive.  In a network environment, data quality is of
-   paramount importance.  Incomplete, delayed, or corrupted data feeds
-   can lead to severe operational or financial losses when agents take
-   autonomous actions (e.g., traffic rerouting, forced execution of
-   financial transactions).  Therefore, it must extend beyond the
-   current focus on bandwidth and speed to include quality verification
-   of the data agents rely upon and resilience of service paths.  This
-   is essential to meet the requirements of continuously operating
-   intelligent agents.
+   paramount importance.  Incomplete, delayed, semantic-less, context-
+   less, or corrupted data feeds can lead to severe operational or
+   financial losses when agents take autonomous actions (e.g., traffic
+   rerouting, forced execution of financial transactions).  Therefore,
+   it must extend beyond the current focus on bandwidth and speed to
+   include quality verification of the data agents rely upon and
+   resilience of service paths.  This is essential to meet the
+   requirements of continuously operating intelligent agents.
 
-4.5.  Problems with the existing IBN system: Rigidity of the Intent
+4.5.  Problems with the Existing IBN System: Rigidity of the Intent
       Translation Engine (ITE)
 
    Existing IBN systems rely on the Intent Translation Engine (ITE) or
    the Intent-Based System (IBS) spatial functionality to bridge the gap
-   between the intent user and the network operational infrastructure.
-   This translation is typically driven by predefined data models such
-   as YANG models and lacks the necessary adaptive flexibility when
-   unforeseen conditions arise.  IBN fundamentally shifts operational
-   modes to a dynamic intent-based approach, yet retains the inherent
-   limitation that control remains under human oversight.  Agentic AI
-   minimises or eliminates human intervention in this cognitive loop
-   through LLM-based reasoning and planning capabilities, refining the
-   IBN closed loop by integrating continuous reasoning and conflict
-   resolution capabilities into the cognitive layer.  These capabilities
-   represent what was lacking in the classical IBN definition and form
-   the core technical objective.
+   between the business intent and the network operational
+   infrastructure.  This translation is typically driven by predefined
+   data models such as YANG models and lacks the necessary adaptive
+   flexibility when unforeseen conditions arise.  IBN fundamentally
+   shifts operational modes to a dynamic intent-based approach, yet
+   retains the inherent limitation that control remains under human
+   oversight.  Agentic AI minimises or eliminates human intervention in
+   this cognitive loop through LLM-based reasoning and planning
+   capabilities, refining the IBN closed loop by integrating continuous
+   reasoning and conflict resolution capabilities into the cognitive
+   layer.  These capabilities represent what was lacking in the
+   classical IBN definition and form the core technical objective.
 
 4.6.  ANIMA ASA's Problem: Cognitive Simplicity
 
@@ -394,13 +397,14 @@ Table of Contents
    Protocol; GRASP), demonstrating the necessity for a dedicated
    protocol layer that extends beyond the existing ANIMA framework.
 
-5.  Objectives of Agentic AI for network management
+5.  Objectives of Agentic AI for Operations & Management
 
 5.1.  Objective 1 - Hyper-Autonomous Network Operations & Management
 
-   Beyond minimizing human intervention, it must implement a Self-
-   Driving network that autonomously recognises, diagnoses, infers, and
-   resolves issues even in unpredictable situations.
+   Beyond minimizing human intervention, it must implement a Autonomous
+   Driving Netowrk (defined in TMF) that autonomously recognises,
+   diagnoses, infers, and resolves issues even in unpredictable
+   situations.
 
    Key Features:
 
@@ -515,40 +519,42 @@ Table of Contents
       before any byte is moved, letting operators compare KPI deltas
       without real-world probing.
 
-6.  Use cases of Agentic AI for network management
+6.  Use cases of Agentic AI for Operations & Management
 
 6.1.  Intent Based Service Delivery
 
    Below is the diagram showcasing how network management AI agent takes
    effect on the intent based service delivery process.
 
-    +----------------------------------------------------------+
-    |            L3VPN Service Delivery Application            |
-    +-------------------------+--------------------------------+
-                              |
-                       Intent |LPI
-                      interface
-                              |
-    +---------+  +------------V--------------------------------+
-    |         |  |                                             |
-    |Knowledge|  |       Network Management AI Agent           |
-    |  Base   <-->                                             |
-    |         |  |  +----------------------------------------+ |
-    +---------+  |  |     Intent Decomposing&Analysis        | |
-                 |  |                                        | |
-    +---------+  |  | +----------++----------+ +------------+| |
-    |         |  |  | |  Config  || Config   | |   Config   || |
-    | Network |  |  | |Generation||Validation| |Distribution|| |
-    | Digital <-->  | +----------++----------+ +------------+| |
-    | Twin    |  |  +----------------------------------------+ |
-    | Tools   |  |                                             |
-    +---------+  +---------------------------------------------+
+        +----------------------------------------------------------+
+        |            L3VPN Service Delivery Application            |
+        +-------------------------+--------------------------------+
+                                  |
+                           Intent |LPI
+                          interface
+                                  |
+        +---------+  +------------V--------------------------------+
+        |         |  |                                             |
+        |Knowledge|  |       Network Management AI Agent           |
+        |  Base   <-->                                             |
+        |         |  |  +----------------------------------------+ |
+        +---------+  |  |     Intent Decomposing&Analysis        | |
+                     |  |                                        | |
+        +---------+  |  | +----------++----------+ +------------+| |
+        |         |  |  | |  Config  || Config   | |   Config   || |
+        | Network |  |  | |Generation||Validation| |Distribution|| |
+        | Digital <-->  | +----------++----------+ +------------+| |
+        | Twin    |  |  +----------------------------------------+ |
+        | Tools   |  |                                             |
+        +---------+  +---------------------------------------------+
 
-    +----------------------------------------------------------+
-    |            Network  Infrastructure                       |
-    +----------------------------------------------------------+
+        +----------------------------------------------------------+
+        |            Network  Infrastructure                       |
+        +----------------------------------------------------------+
 
-   Legend: LPI - Language Programming Interface
+       Legend: LPI - Language Programming Interface
+
+                  Figure 2: Intent Based Service Delivery
 
    Step a.  L3VPN Service Delivery Application at the OSS layer uses
    Language Programming Interface (LPI) to send service intent request
@@ -591,33 +597,33 @@ Table of Contents
    IP network agent and mobile network agent within its management
    domain to resolve the problem.
 
-              +-----------------------+
-              |Automobile Manufacturer|
-              |    Complaints         |
-              +-----------------------+
-                         |
-              +----------------------+
-              | BSS Trouble tickets  |
-              |      System          |
-              +----------------------+
-                         |
-       +-------------------------------------------+
-       |                 OSS                       |
-       |                                           |
-       | +---------------+       +----------------+|
-       | |   Complaint   |       |   Complaint    ||
-       | | Handling Agent|-------| Handling Agent ||
-       | |  In Domain A  |       |   In Domain B  ||
-       | +-------+-------+       +----------------+|
-       +---------+---------------------------------+
-              +--+-----------------------+
-         +----+---------+         +------+-------+
-         |   Mobile     |         |    IP        |
-         |   Network    |         |   Network    |
-         |   Agent      |         |   Agent      |
-         +--------------+         +--------------+
+                        +-----------------------+
+                        |Automobile Manufacturer|
+                        |    Complaints         |
+                        +-----------------------+
+                                   |
+                        +----------------------+
+                        | BSS Trouble tickets  |
+                        |      System          |
+                        +----------------------+
+                                   |
+                 +-------------------------------------------+
+                 |                 OSS                       |
+                 |                                           |
+                 | +---------------+       +----------------+|
+                 | |   Complaint   |       |   Complaint    ||
+                 | | Handling Agent|-------| Handling Agent ||
+                 | |  In Domain A  |       |   In Domain B  ||
+                 | +-------+-------+       +----------------+|
+                 +---------+---------------------------------+
+                        +--+-----------------------+
+                   +----+---------+         +------+-------+
+                   |   Mobile     |         |    IP        |
+                   |   Network    |         |   Network    |
+                   |   Agent      |         |   Agent      |
+                   +--------------+         +--------------+
 
-                   Figure 1: IoV User Complaints Handling
+                   Figure 3: IoV User Complaints Handling
 
    o Tasks are triggered by natural language
 
@@ -679,6 +685,8 @@ Table of Contents
     |              +--------------+      |    AI Models    |           |
     |                                    +-----------------+           |
     +------------------------------------------------------------------+
+
+                Figure 4: AI Agent Driven Network Management
 
    Traditional network operation and maintenance require extensive human
    oversight and are constrained by predefined policies, limiting real-
@@ -776,5 +784,6 @@ Authors' Addresses
 
 
    Benoit Claise
-   Individual
+   Everything OPS
+   Belgium
    Email: benoit@everything-ops.net
