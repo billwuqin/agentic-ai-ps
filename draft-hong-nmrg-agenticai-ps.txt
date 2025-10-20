@@ -94,8 +94,8 @@ Table of Contents
            Network Measurement
    6.  Use cases of Agentic AI for network management
      6.1.  Intent Based Service Delivery
-     6.2.  Use case Cross-layer and Cross-domain Multi-Agent
-           communication for Complaint handling
+     6.2.  Cross-layer and Cross-domain Multi-Agent communication for
+           Complaint handling
      6.3.  Use case #3
    7.  Security Considerations
    8.  IANA Considerations
@@ -571,8 +571,8 @@ Table of Contents
    Step e.  After L3VPN Service is delivered successfully, the Network
    Management AI Agent will use LPI to return success results.
 
-6.2.  Use case Cross-layer and Cross-domain Multi-Agent communication
-      for Complaint handling
+6.2.  Cross-layer and Cross-domain Multi-Agent communication for
+      Complaint handling
 
    In this scenario, automotive companies centrally collect complaints
    from their customers (drivers) and use the operator’s complaint
