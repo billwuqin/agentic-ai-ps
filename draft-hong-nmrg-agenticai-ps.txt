@@ -141,8 +141,8 @@ Table of Contents
    essential to ensure interoperability and security between different
    vendor platforms and network domains.  The collaborative nature of
    agent-based AI systems (multi-agent systems, or MAS) means that
-   standardized agent-to- agent protocols (A2A protocols) must be
-   defined to prevent silos forming within the system and to facilitate
+   standardized agent-to-agent protocols (A2A protocols) must be defined
+   to prevent silos forming within the system and to facilitate
    discovery, understanding and collaboration between agents.
 
 2.  Conventions and Definitions
@@ -204,10 +204,10 @@ Table of Contents
 
    The Autonomic Networking Integrated Model and Approach (ANIMA)
    Working Group of the IETF developed the Autonomic Service Agent (ASA)
-   for autonomic networking.  RFC 7575 defines the ASA as An agent
+   for autonomic networking.  [RFC7575] defines the ASA as An agent
    implemented on an autonomic node that implements an autonomic
    function, either in part (in the case of a distributed function) or
-   whole ' [RFC7575].  In other words, the ASA is a core component of
+   whole [RFC7575].  In other words, the ASA is a core component of
    ANIMA: a software module that performs autonomic functions on network
    nodes.  The ANIMA Working Group is defining design guidelines,
    lifecycle management, authorization and coordination standards for
@@ -231,9 +231,9 @@ Table of Contents
    specialized AI models form the basis of this core.  Reasoning Engine/
    LLM: This constitutes the core of the agent's brain.  It understands
    abstract objectives (intent) received from users or higher-level
-   systems, creates step- by-step plans (plan) to achieve them,
-   evaluates the outcomes of execution (reflection) and uses logical
-   reasoning to modify plans or determine subsequent steps.
+   systems, creates step-by-step plans (plan) to achieve them, evaluates
+   the outcomes of execution (reflection) and uses logical reasoning to
+   modify plans or determine subsequent steps.
 
    Memory is the data repository that agents learn from and refer to.
 
@@ -421,7 +421,7 @@ Table of Contents
 
    *  Autonomous Configuration & Optimization: AI agents comprehend
       high-level objectives such as ‘optimize user experience’ and
-      autonomously configure and continuously fine- tune routing
+      autonomously configure and continuously fine-tune routing
       protocols, QoS policies, security rules, and other elements to
       achieve them.
 
