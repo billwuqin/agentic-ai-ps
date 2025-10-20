@@ -331,9 +331,53 @@ Key Features:
 - Counterfactual & Predictive “What-if” Metrics: Given a proposed config change (new AQM, additional slice, 400 GbE upgrade), the generator produces the expected
   delay/loss/jitter distributions before any byte is moved, letting operators compare KPI deltas without real-world probing.
 
-# Use case of Agentic AI for network management
+# Use cases of Agentic AI for network management
 
-## Use case #1
+## Intent Based Service Delivery
+
+Below is the diagram showcasing how network management AI agent takes effect on the intent based service delivery process.
+~~~~
+
+ +----------------------------------------------------------+
+ |            L3VPN Service Delivery Application            |
+ +-------------------------+--------------------------------+
+                           |
+                    Intent |LPI
+                   interface
+                           |
+ +---------+  +------------V--------------------------------+
+ |         |  |                                             |
+ |Knowledge|  | Network Management AI Agent                 |
+ |  Base   <-->                                             |
+ |         |  |  +----------------------------------------+ |
+ +---------+  |  |     Intent Decomposing&Analysis        | |
+              |  |                                        | |
+ +---------+  |  | +----------++----------+ +------------+| |
+ |         |  |  | |  Config  || Config   | |   Config   || |
+ | Network |  |  | |Generation||Validation| |Distribution|| |
+ | Digital <-->  | +----------++----------+ +------------+| |
+ | Twin    |  |  +----------------------------------------+ |
+ | Tools   |  |                                             |
+ +---------+  +---------------------------------------------+
+
+ +----------------------------------------------------------+
+ |            Network  Infrastructure                       |
+ +----------------------------------------------------------+
+
+Legend: LPI - Language Programming Interface
+
+~~~~
+
+ a. L3VPN Service Delivery Application uses Language Programming Interface (LPI)
+    to send service intent request "Create L3VPN service with 2 VPN sites in Beijing
+	   and Shanghai using L3SM Service Model".
+ b. The Network Management AI Agent recognizes Intent and identify user's objective "VPN Service Creation".
+ c. The Network Management AI Agent interacts with Knowledge base for expert experience and looks up thought of chain
+    related to "VPN Service Creation". And then the Knowledge base return results to the Network management AI Agent.
+ d. The Network Management AI Agent decomposes user intent and break down the tasks into operational workflow including
+    configuration generation, configuration validation, configuration distribution. For configuration validation, it will
+	   interact with Network Digital Twin tools to obtain the validation results.
+ e. After L3VPN Service is delivered successfully, the Network Management AI Agent will use LPI to return success results.
 
 ## Use case #2
 
