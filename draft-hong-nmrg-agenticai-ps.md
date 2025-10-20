@@ -246,7 +246,7 @@ is essential to meet the requirements of continuously operating intelligent agen
 
 Existing IBN systems rely on the Intent Translation Engine (ITE) or the Intent-Based System (IBS) spatial functionality to bridge the gap between the business intent and the
 network operational infrastructure. This translation is typically driven by predefined data models such as YANG models and lacks the necessary adaptive flexibility when
-unforeseen conditions arise. 
+unforeseen conditions arise.
 IBN fundamentally shifts operational modes to a dynamic intent-based approach, yet retains the inherent limitation that control remains under human oversight.
 Agentic AI minimises or eliminates human intervention in this cognitive loop through LLM-based reasoning and planning capabilities, refining the IBN closed loop by
 integrating continuous reasoning and conflict resolution capabilities into the cognitive layer.
