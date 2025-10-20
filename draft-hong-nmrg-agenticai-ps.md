@@ -104,7 +104,7 @@ agent protocols (A2A protocols) must be defined to prevent silos forming within 
 
 ## Role of Agentic AI in Network Operations
 
-The complexity of network management and network operations are increasing exponentially, due to the increased size of networks and the increased frequency of change, 
+The complexity of network management and network operations are increasing exponentially, due to the increased size of networks and the increased frequency of change,
 for for the new 5G and future 6G services. This makes it increasingly difficult for existing automation
 techniques to meet the requirements for operational efficiency and service quality. Consequently, Agentic AI is an essential technological advancement for the realization
 of autonomous networks.
