@@ -455,8 +455,52 @@ o Tasks involve cross-layer and cross-domain aspects
 
     - management & maintenance domains (i.e. across provinces and cities)
 
-## Use case #3
+## AI Agent Driven Network Management
 
+~~~~
+                               +-----------------+
+                               |       OSS       |
+                               +--------+--------+
+                                        |
+                                        |LPI
+                                        |
+                                        |
+          Model Invocation    +---------+--------+
+   +--------------------------+                  |
+   |         Momery Access     Network Management -----------+
+   |        +-----------------+     AI Agent     |           |
+   |        |            +----|                  |           |
+   |        |            |    +-------^---+------+           |
+   |        |            |   Response |   |Execution         |
+   |   +----V---+   +----+-----+    +-+---V-----+     +------+------+
+   |   |        |   |          |    |           |     |             |
+   |   | Memory +---|Tools-box <----| Validation+----->  Execution  |
+   |   |        |   |          |    |           |     |             |
+   |   +--------+   +----^-----+    +-----------+     +-------------+
+   |              Model  |     Tool Calling     Action Execution
+   |           Invocation|
+   |                     |
+ +-V---------------------V------------------------------------------+
+ |                     Model Repository                             |
+ |  (Task Decomposing, Reasoning, Data Analysis, Decision Making..) |
+ |              +--------------+      +-----------------+           |
+ |              |  LLM Models  |      |Specialized Small|           |
+ |              +--------------+      |    AI Models    |           |
+ |                                    +-----------------+           |
+ +------------------------------------------------------------------+
+~~~~
+
+Traditional network operation and maintenance require extensive human oversight and are constrained
+by predefined policies, limiting real-time adaptability. Network management AI agents at the network
+level enhance network intelligence and automation by integrating large network foundation models, specialized
+small AI models, and feedback closed loops mechanisms. The key functional requirements of the Network
+management AI agent include:
+
+* Integrate with large foundation models and specialized small models for context-aware decision-making;
+* Support Intent realizing including task decomposition,reasoning, inference&prediction and decision making.
+* Support autonomous execution of network service lifecycle management, including network service delivery,
+  network anomaly detection, predictive maintenance and troubleshooting, network re-optimization;
+* Work with upper layer OSS to facilitate cross-layer collaboration, enabling seamless communication between network elements;
 
 # Security Considerations
 
