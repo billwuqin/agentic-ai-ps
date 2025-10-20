@@ -85,8 +85,7 @@ Table of Contents
            Intent Translation Engine (ITE)
      4.6.  ANIMA ASA's Problem: Cognitive Simplicity
    5.  Objectives of Agentic AI for Operations & Management
-     5.1.  Objective 1 - Hyper-Autonomous Network Operations &
-           Management
+     5.1.  Objective 1 - Autonomous Network Operations & Management
      5.2.  Objective 2 - Intelligent & Dynamic Resource Orchestration
      5.3.  Objective 3 - Predictive & Adaptive Network Security
      5.4.  Objective 4 - Enabling Novel Network Service Models
@@ -399,7 +398,7 @@ Table of Contents
 
 5.  Objectives of Agentic AI for Operations & Management
 
-5.1.  Objective 1 - Hyper-Autonomous Network Operations & Management
+5.1.  Objective 1 - Autonomous Network Operations & Management
 
    Beyond minimizing human intervention, it must implement a Autonomous
    Driving Netowrk (defined in TMF) that autonomously recognises,
@@ -521,6 +520,9 @@ Table of Contents
 
 6.  Use cases of Agentic AI for Operations & Management
 
+   Different use cases for Agentic AI on Operation & Management can be
+   identified, as described in the following sections.
+
 6.1.  Intent Based Service Delivery
 
    Below is the diagram showcasing how network management AI agent takes
@@ -558,16 +560,17 @@ Table of Contents
 
    Step a.  L3VPN Service Delivery Application at the OSS layer uses
    Language Programming Interface (LPI) to send service intent request
-   "Create L3VPN service with 2 VPN sites in Beijing and Shanghai using
-   L3SM Service Model".
+   "Create L3VPN service with 2 VPN sites in London and Paris using L3SM
+   Service Model".
 
-   Step b.  The Network Management AI Agent recognizes Intent and
-   identify user's objective "VPN Service Creation".
+   Step b.  The Network Management AI Agent looks up knowledge base to
+   understand the intent and identify user's objective "VPN Service
+   Creation".
 
-   Step c.  The Network Management AI Agent interacts with Knowledge
-   base for expert experience and looks up thought of chain related to
-   "VPN Service Creation".  And then the Knowledge base return results
-   to the Network management AI Agent.
+   Step c.  The Network Management AI Agent further interacts with
+   Knowledge base for expert experience and looks up thought of chain
+   related to "VPN Service Creation".  And then the Knowledge base
+   returns results to the Network management AI Agent.
 
    Step d.  The Network Management AI Agent decomposes user intent and
    break down the tasks into operational workflow including
