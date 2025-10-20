@@ -384,7 +384,7 @@ Legend: LPI - Language Programming Interface
 
  Step e. After L3VPN Service is delivered successfully, the Network Management AI Agent will use LPI to return success results.
 
-## Use case Cross-layer and Cross-domain Multi-Agent communication for Complaint handling
+## Cross-layer and Cross-domain Multi-Agent communication for Complaint handling
 
    In this scenario, automotive companies centrally collect complaints
    from their customers (drivers) and use the operator’s complaint
