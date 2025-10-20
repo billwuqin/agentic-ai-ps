@@ -531,7 +531,7 @@ Table of Contents
                               |
     +---------+  +------------V--------------------------------+
     |         |  |                                             |
-    |Knowledge|  | Network Management AI Agent                 |
+    |Knowledge|  |       Network Management AI Agent           |
     |  Base   <-->                                             |
     |         |  |  +----------------------------------------+ |
     +---------+  |  |     Intent Decomposing&Analysis        | |
@@ -550,9 +550,10 @@ Table of Contents
 
    Legend: LPI - Language Programming Interface
 
-   Step a.  L3VPN Service Delivery Application uses Language Programming
-   Interface (LPI) to send service intent request "Create L3VPN service
-   with 2 VPN sites in Beijing and Shanghai using L3SM Service Model".
+   Step a.  L3VPN Service Delivery Application at the OSS layer uses
+   Language Programming Interface (LPI) to send service intent request
+   "Create L3VPN service with 2 VPN sites in Beijing and Shanghai using
+   L3SM Service Model".
 
    Step b.  The Network Management AI Agent recognizes Intent and
    identify user's objective "VPN Service Creation".
