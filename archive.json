@@ -1,0 +1,125 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2025-10-21T01:18:23.798329+00:00",
+  "repo": "billwuqin/agentic-ai-ps",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOQFPnWc6ulqQj",
+      "title": "Update draft-hong-nmrg-agenticai-ps.md",
+      "url": "https://github.com/billwuqin/agentic-ai-ps/pull/1",
+      "state": "MERGED",
+      "author": "bclaise",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Some editorial changes.",
+      "createdAt": "2025-10-20T09:00:05Z",
+      "updatedAt": "2025-10-20T12:45:04Z",
+      "baseRepository": "billwuqin/agentic-ai-ps",
+      "baseRefName": "main",
+      "baseRefOid": "2bbcbcf8b3bf1417ba245faf06d03ce77c705184",
+      "headRepository": "billwuqin/agentic-ai-ps",
+      "headRefName": "bclaise-patch-1",
+      "headRefOid": "f5df4bb0d5bd5b1b2753cf3d947b5dca4a0779a9",
+      "closedAt": "2025-10-20T12:25:09Z",
+      "mergedAt": "2025-10-20T12:25:09Z",
+      "mergedBy": "billwuqin",
+      "mergeCommit": {
+        "oid": "6fd0995bf3a1a5502218e34d26e33f5abb4f8fb1"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOQFPnWc7IC6gg",
+          "commit": {
+            "abbreviatedOid": "f5df4bb"
+          },
+          "author": "billwuqin",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "The changes look good to me.",
+          "createdAt": "2025-10-20T11:58:36Z",
+          "updatedAt": "2025-10-20T11:58:36Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOQFPnWc6uofzR",
+      "title": "Update draft-hong-nmrg-agenticai-ps.md",
+      "url": "https://github.com/billwuqin/agentic-ai-ps/pull/2",
+      "state": "MERGED",
+      "author": "billwuqin",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-10-20T13:29:23Z",
+      "updatedAt": "2025-10-20T13:30:41Z",
+      "baseRepository": "billwuqin/agentic-ai-ps",
+      "baseRefName": "main",
+      "baseRefOid": "4c7b7b969e03ef6cb5a6589a2c0944bf542408a8",
+      "headRepository": "billwuqin/agentic-ai-ps",
+      "headRefName": "billwuqin-patch-1",
+      "headRefOid": "e7e03f9f4074f26945aa375b9df0d8cb335eca93",
+      "closedAt": "2025-10-20T13:30:41Z",
+      "mergedAt": "2025-10-20T13:30:41Z",
+      "mergedBy": "billwuqin",
+      "mergeCommit": {
+        "oid": "3d26b9f81f2d3743896d4311fe637189b0e141c0"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
