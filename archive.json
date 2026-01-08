@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-01-06T01:26:43.727697+00:00",
+  "timestamp": "2026-01-08T01:27:48.534401+00:00",
   "repo": "billwuqin/agentic-ai-ps",
   "labels": [
     {
@@ -118,6 +118,32 @@
       "mergeCommit": {
         "oid": "3d26b9f81f2d3743896d4311fe637189b0e141c0"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOQFPnWc671Xqa",
+      "title": "Adding Objective 6: Explainable and Accountable Autonomous Decision-Making",
+      "url": "https://github.com/billwuqin/agentic-ai-ps/pull/3",
+      "state": "OPEN",
+      "author": "shaileshprabhu95",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "@billwuqin @bclaise @aeroship - please review this PR, and let me know your thoughts. Thanks.",
+      "createdAt": "2026-01-07T04:40:04Z",
+      "updatedAt": "2026-01-07T04:41:32Z",
+      "baseRepository": "billwuqin/agentic-ai-ps",
+      "baseRefName": "main",
+      "baseRefOid": "3d26b9f81f2d3743896d4311fe637189b0e141c0",
+      "headRepository": "shaileshprabhu95/agentic-ai-ps",
+      "headRefName": "objective6",
+      "headRefOid": "fcf9a687f6244bfe6c522857a7d531ee01450d0f",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
