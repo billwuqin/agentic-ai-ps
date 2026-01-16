@@ -104,6 +104,12 @@ forming within the system and to facilitate discovery, understanding and collabo
 
 {::boilerplate bcp14-tagged}
 
+This document defines the following terminologies:
+
+Agentic AI:
+: advanced artificial intelligence (AI) systems designed to act with a high degree of autonomy, initiative, and adaptability to achieve complex, high-level goals with minimal human intervention. Unlike traditional AI, which is typically reactive and follows fixed rules or simple prompt-response cycles, Agentic AI function
+uses a reasoning engine (often a Large Language Model) to independently plan, execute, and self-correct multi-step workflows. 
+
 # Agentic AI for Network mMnagement
 
 ## Role of Agentic AI in Network Operations
