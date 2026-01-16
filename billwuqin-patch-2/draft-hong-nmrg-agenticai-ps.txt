@@ -5,12 +5,12 @@
 Network Management                                               Y. Hong
 Internet-Draft                                        Daejeon University
 Intended status: Informational                                   J. Youn
-Expires: 23 April 2026                               DONG-EUI University
+Expires: 20 July 2026                                DONG-EUI University
                                                                    Q. Wu
                                                                   Huawei
                                                                B. Claise
                                                           Everything OPS
-                                                         20 October 2025
+                                                         16 January 2026
 
 
  Motivations and Problem Statement of Agentic AI for network management
@@ -53,11 +53,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 April 2026.
+   This Internet-Draft will expire on 20 July 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -151,6 +151,17 @@ Table of Contents
    "OPTIONAL" in this document are to be interpreted as described in
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
+
+   This document defines the following terminologies:
+
+   Agentic AI:  advanced artificial intelligence (AI) systems designed
+      to act with a high degree of autonomy, initiative, and
+      adaptability to achieve complex, high-level goals with minimal
+      human intervention.  Unlike traditional AI, which is typically
+      reactive and follows fixed rules or simple prompt-response cycles,
+      Agentic AI function uses a reasoning engine (often a Large
+      Language Model) to independently plan, execute, and self-correct
+      multi-step workflows.
 
 3.  Agentic AI for Network mMnagement
 
