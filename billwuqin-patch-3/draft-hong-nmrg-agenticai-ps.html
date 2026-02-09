@@ -1370,9 +1370,6 @@ the outcomes of execution (reflection) and uses logical reasoning to modify plan
               <p id="section-3.2.1-3.2.1">Long-term memory: It stores persistent information such as previously successful solutions, general knowledge and network architecture guidelines.<a href="#section-3.2.1-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-3.2.1-4">The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase, it determines
-which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately configuring the necessary
-parameters.<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="execution-interaction">
@@ -1383,13 +1380,16 @@ parameters.<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
 <p id="section-3.2.2-1">These components enable the agent to communicate with and make changes to the external environment (i.e. the network or system).<a href="#section-3.2.2-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3.2.2-2.1">
-              <p id="section-3.2.2-2.1.1">Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.<a href="#section-3.2.2-2.1.1" class="pilcrow">¶</a></p>
+              <p id="section-3.2.2-2.1.1">Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.
+The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase,
+it determines which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately
+configuring the necessary parameters.<a href="#section-3.2.2-2.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-3.2.2-2.2">
               <p id="section-3.2.2-2.2.1">Execution environment: A sandbox environment in which code generated according to the plan is executed safely, and external tools are invoked.<a href="#section-3.2.2-2.2.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-3.2.2-2.3">
-              <p id="section-3.2.2-2.3.1">Sensing/observation mechanism: The channel through which the agent verifies execution results and collects the current environmental state. This
+              <p id="section-3.2.2-2.3.1">Sensing/observation mechanism: The channel through which the tool Orchestrator verifies execution results and collects the current environmental state. This
 involves more than just invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.<a href="#section-3.2.2-2.3.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
