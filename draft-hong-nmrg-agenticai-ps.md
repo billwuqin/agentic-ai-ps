@@ -159,19 +159,18 @@ Memory is the data repository that agents learn from and refer to.
 
  - Long-term memory: It stores persistent information such as previously successful solutions, general knowledge and network architecture guidelines.
 
-The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase, it determines
-which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately configuring the necessary
-parameters.
-
 ### Execution & Interaction
 
 These components enable the agent to communicate with and make changes to the external environment (i.e. the network or system).
 
  - Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.
+   The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase,
+   it determines which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately
+   configuring the necessary parameters.
 
  - Execution environment: A sandbox environment in which code generated according to the plan is executed safely, and external tools are invoked.
 
- - Sensing/observation mechanism: The channel through which the agent verifies execution results and collects the current environmental state. This
+ - Sensing/observation mechanism: The channel through which the tool Orchestrator verifies execution results and collects the current environmental state. This
    involves more than just invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.
 
 ~~~~
