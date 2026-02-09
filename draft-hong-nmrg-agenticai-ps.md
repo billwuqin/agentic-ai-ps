@@ -146,7 +146,7 @@ management, authorization and coordination standards for the ASA {{ANIMA}}.
 IETF’ AI Preferences (AIPREF) Working Group is focused on standardizing a common vocabulary and mechanism through which users and systems
 can express their preferences regarding the use of their content in the development, training, deployment and use of AI models {{AIPREF}}.
 
-The A2A-T protocol {{A2A-T}} is tailored for Autonomous Networking scenarios, facilitating effective multi-agent communication and collaboration.
+The A2A-T protocol is tailored for Autonomous Networking scenarios, facilitating effective multi-agent communication and collaboration.
 This extension aims to enhance interoperability and efficiency in complex telecommunications environments by providing a standardized
 interaction framework among agents across various layers and domains.
 
