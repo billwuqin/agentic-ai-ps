@@ -83,20 +83,20 @@ The explosive growth of digital services and the increasing complexity of networ
 real-time responsiveness, high efficiency and the ability to make autonomous decisions on a large scale from operational
 environments. To overcome the limitations of existing static automation methods and human-led Intent-Based Networking (IBN),
 a new Agentic AI-based paradigm is required. This involves introducing autonomous software entities that can interpret
-information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.
+intent information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.
 
 Unlike traditional automation, which relies on pre-programmed rules, agentic AI uses autonomous decision-making capabilities
 to handle large-scale network activities and customer requests swiftly and accurately. These agents perform tasks such as
 network traffic management, fault resolution, and customer interaction support, continuously executing responses that previously
-required manual human review or escalation.
+required manual human review or the issue escalation.
 
 Agentic AI uses large language models (LLMs) to encompass a wide variety of capabilities, such as reasoning, problem-solving,
 interacting with external environments and performing actions, which extend far beyond natural language processing. It can
 decompose tasks, breaking down complex objectives into specific tasks and subtasks to achieve them. This cognitive capacity enables
-a persistent cognitive cycle (observation, inference, action), continuously aligning network operations with high-level business intent.
+a persistent cognitive cycle (observation, reason, action), continuously aligning network operations with high-level business intent.
 
 When such autonomous agents are widely deployed across the communications and network domains, standardized protocols are essential to
-ensure interoperability and security between different vendor platforms and network domains. The collaborative nature of agent-based AI
+ensure interoperability and security among different vendor platforms and network domains. The collaborative nature of agent-based AI
 systems (multi-agent systems, or MAS) means that standardized agent-to-agent protocols (A2A protocols) must be defined to prevent silos
 forming within the system and to facilitate discovery, understanding and collaboration between agents.
 
@@ -117,14 +117,14 @@ to independently plan, execute, and self-correct multi-step workflows.
 ## Role of Agentic AI in Network Operations
 
 The complexity of network management and network operations are increasing exponentially, due to the increased size of networks and the
-increased frequency of change, for for the new 5G and future 6G services. This makes it increasingly difficult for existing automation
+increased frequency of change, for the new 5G and future 6G services. This makes it increasingly difficult for existing automation
 techniques to meet the requirements for operational efficiency and service quality. Consequently, Agentic AI is an essential technological
 advancement for the realization of autonomous networks.
 
 Agentic AI refers to intelligent systems that can act autonomously to achieve specific business objectives with minimal human supervision.
-These systems can reason through multi-step problems and adjust their actions in real time. Unlike passive traditional AI systems that
-respond only to direct commands, Agentic AI is an active system operating within an autonomous, closed-loop framework. This framework
-enables the system to perceive its environment, reason, plan a sequence of actions and execute them using various tools and APIs. This
+These systems can reason through multi-step problems and adjust their actions in real time. Unlike traditional AI systems that
+respond only to direct commands passively, Agentic AI is an active system operating within an autonomous, closed-loop framework. This framework
+enables the system to perceive its environment, reason, plan a sequence of actions and execute them using various available tools and APIs. This
 autonomy enables it to perform complex, multi-step processes such as software development, data analysis and network management.
 
 The aim of autonomous networks is to leverage the capabilities of Agentic AI in order to transition operations and maintenance from
@@ -138,7 +138,7 @@ customer experience and reducing operational costs. This involves translating co
 actionable network configuration plans.
 
 Agentic AI optimizes resource allocation based on real-time demand and business objectives, enabling smarter resource and energy
-usage. In architecture research for 6G, for example, the application of constrained agentic AI techniques focused on energy efficiency
+usage. In the architecture research for 6G, for example, the application of constrained agentic AI techniques focused on energy efficiency
 and secure real-time learning for dynamic resource allocation has been identified as a key objective {{Agentic-AI-Wireless}}.
 
 The Autonomic Networking Integrated Model and Approach (ANIMA) Working Group of the IETF developed the Autonomic Service Agent (ASA) for
@@ -167,19 +167,18 @@ Memory is the data repository that agents learn from and refer to.
 
  - Long-term memory: It stores persistent information such as previously successful solutions, general knowledge and network architecture guidelines.
 
-The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase, it determines
-which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately configuring the necessary
-parameters.
-
 ### Execution & Interaction
 
 These components enable the agent to communicate with and make changes to the external environment (i.e. the network or system).
 
  - Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.
+   The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase,
+   it determines which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately
+   configuring the necessary parameters.
 
  - Execution environment: A sandbox environment in which code generated according to the plan is executed safely, and external tools are invoked.
 
- - Sensing/observation mechanism: The channel through which the agent verifies execution results and collects the current environmental state. This
+ - Sensing/observation mechanism: The channel through which the tool Orchestrator verifies execution results and collects the current environmental state. This
    involves more than just invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.
 
 ~~~~
