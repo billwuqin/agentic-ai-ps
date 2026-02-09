@@ -152,6 +152,17 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
+   This document defines the following terminologies:
+
+   Agentic AI:  advanced artificial intelligence (AI) systems designed
+      to act with a high degree of autonomy, initiative, and
+      adaptability to achieve complex, high-level goals with minimal
+      human intervention.  Unlike traditional AI, which is typically
+      reactive and follows fixed rules or simple prompt-response cycles,
+      Agentic AI function uses a reasoning engine (often a Large
+      Language Model) to independently plan, execute, and self-correct
+      multi-step workflows.
+
 3.  Agentic AI for Network mMnagement
 
 3.1.  Role of Agentic AI in Network Operations
