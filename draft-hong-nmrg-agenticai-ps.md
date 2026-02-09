@@ -283,8 +283,10 @@ Key Features:
 
 - Predictive & Proactive Fault Management: AI agents learn traffic patterns, logs, and performance metrics in real time to identify
   potential causes before faults occur. The network autonomously reroutes traffic or reallocates resources to prevent service interruptions at source.
+
 - Intelligent Root Cause Analysis: In complex, intertwined fault scenarios, multiple agents collaborate to synthesize distributed data. They deduce
   the root cause as a "problem of correlations" rather than a single point of failure and propose solutions.
+
 - Autonomous Configuration & Optimization: AI agents comprehend high-level objectives such as ‘optimize user experience’ and autonomously configure
   and continuously fine-tune routing protocols, QoS policies, security rules, and other elements to achieve them.
 
@@ -297,8 +299,10 @@ Key Features:
 
 - Dynamic Network Slicing: AI agents recognize application requirements (latency, bandwidth, etc.) in real time, instantly creating, scaling, and
   downsizing customized network slices per user or service.
+
 - Cross-Domain Resource Negotiation: AI agents distributed across networks of different telecommunications or cloud providers negotiate in real time
   to dynamically secure optimal resources, ensuring end-to-end quality for global services.
+
 - Edge Computing Resource Optimization: By predicting edge node load and user mobility, AI agents dynamically reallocate workloads to optimal edge
   nodes while ensuring service continuity.
 
@@ -311,6 +315,7 @@ Key Features:
 
 - Autonomous threat hunting and response: Security agents continuously detect minute anomalies across the entire network. If an anomaly is deemed
   a threat, they respond immediately by taking action such as isolating infected nodes or blocking attack traffic, all without human intervention.
+
 - Dynamic Defense Posture: AI agents dynamically modify firewall policies, access control lists (ACLs), and traffic filtering rules in real time
   based on attack type and intensity, thereby minimizing the attack surface.
 
@@ -323,6 +328,7 @@ Key Features:
 
 - Intent-driven Service Creation: When a user requests in natural language, 'I want to play a lag-free VR game with my friends,' an AI agent
   interprets this and provides a Network-as-a-Service that instantly allocates the necessary resources (such as network slices and edge servers).
+
 - Semantic Communication: Communication focuses on the “meaning” or “purpose” conveyed by data rather than the bits themselves, enabling
   ultra-efficient communication that achieves maximum effect with minimal data transmission.
 
