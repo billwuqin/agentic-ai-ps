@@ -360,6 +360,21 @@ Key Features:
 - Counterfactual & Predictive “What-if” Metrics: Given a proposed config change (new AQM, additional slice, 400 GbE upgrade), the generator produces
   the expected delay/loss/jitter distributions before any byte is moved, letting operators compare KPI deltas without real-world probing.
 
+## Objective 6 - Explainable and Accountable Autonomous Decision-Making
+
+To ensure that autonomous and agentic AI systems operating the network can be trusted, governed, and safely adopted at scale, their decisions and actions must be explainable, traceable, and accountable throughout the operational lifecycle.
+
+Key Features:
+- Decision Traceability & Reasoning Lineage: AI agents maintain an auditable chain linking high-level goals, observed network state, inferred hypotheses, selected plans, and executed actions. Each autonomous decision can be traced back to the inputs, assumptions, and intermediate reasoning steps that produced it.
+
+- Confidence, Uncertainty & Risk Awareness: Alongside every major decision or recommendation, AI agents expose confidence levels, uncertainty bounds, or risk indicators, enabling operators and higher-level agents to assess decision reliability and determine when human oversight or additional validation is required.
+
+- Human-Interpretable Explanations for Operations: Instead of opaque actions, agents generate concise, human-readable explanations describing why a specific action was taken (e.g., configuration change, traffic reroute, security response), allowing operators to rapidly understand intent, impact, and alternatives.
+
+- Post-Incident Accountability & Audit Support: In failure, outage, or policy-violation scenarios, AI agents provide verifiable decision logs and justification records that support root-cause analysis, compliance checks, and continuous improvement of autonomous behaviors.
+
+- Policy-Aware Oversight & Intervention Hooks: Explainability mechanisms enable policy engines, supervisory agents, or human operators to validate decisions against organizational constraints, override actions when required, and refine operational policies based on observed agent behavior.
+
 # Use cases of Agentic AI for Operations & Management
 
 Different use cases for Agentic AI on Operation & Management can be identified, as described in the following sections.
