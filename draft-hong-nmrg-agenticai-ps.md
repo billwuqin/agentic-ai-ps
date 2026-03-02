@@ -250,7 +250,7 @@ breaches or manipulation where autonomous systems could outpace human control ca
 The decision-making of AI agents is determined by the quality of the data they receive. In a network environment, data quality is
 of paramount importance. Incomplete, delayed, semantic-less, context-less, or corrupted data feeds can lead to severe operational
 or financial losses when agents take autonomous actions (e.g., traffic rerouting, forced execution of financial transactions).
-Therefore, it must extend beyond the current focus on bandwidth and speed to include quality verification of the data agents rely
+Therefore, it must extend beyond the current focus on bandwidth and speed to include the data quality verification agents rely
 upon. This is essential to meet the requirements of continuously operating intelligent agents.
 
 ## Problems with the Existing IBN System: Rigidity of the Intent Translation Engine (ITE)
