@@ -780,7 +780,7 @@ Table of Contents
    Impresonating,Overwheling human in the loop, etc.
 
    The detailed security consideration has been documented in in section
-   11 of [I-D.irtf-wmz-nmrg-agent-ndt-arch].
+   11 of [I-D.wmz-nmrg-agent-ndt-arch].
 
 8.  IANA Considerations
 
@@ -812,8 +812,13 @@ Table of Contents
    [ANIMA]    "IETF ANIMA WG", 2025,
               <https://datatracker.ietf.org/group/anima/about/>.
 
-   [I-D.irtf-wmz-nmrg-agent-ndt-arch]
-              "*** BROKEN REFERENCE ***".
+   [I-D.wmz-nmrg-agent-ndt-arch]
+              Wu, Q., Zhou, C., Contreras, L. M., Han, S., and Y. Hong,
+              "Network Digital Twin and Agentic AI based Architecture
+              for AI driven Network Operations", Work in Progress,
+              Internet-Draft, draft-wmz-nmrg-agent-ndt-arch-03, 23
+              February 2026, <https://datatracker.ietf.org/doc/html/
+              draft-wmz-nmrg-agent-ndt-arch-03>.
 
    [RFC7575]  Behringer, M., Pritikin, M., Bjarnason, S., Clemm, A.,
               Carpenter, B., Jiang, S., and L. Ciavaglia, "Autonomic
