@@ -80,7 +80,7 @@ Table of Contents
      4.2.  Absence of agent-to-agent (A2A) Semantic Interoperability
      4.3.  Lack of Dynamic Trust and Accountability in Autonomous
            Behavior
-     4.4.  Real-time Data Validity and Resilience Issues
+     4.4.  Real-time Data Quality and Validity Issue
      4.5.  Problems with the Existing IBN System: Rigidity of the
            Intent Translation Engine (ITE)
      4.6.  ANIMA ASA's Problem: Cognitive Simplicity
@@ -367,7 +367,7 @@ Table of Contents
    breaches or manipulation where autonomous systems could outpace human
    control capabilities.
 
-4.4.  Real-time Data Validity and Resilience Issues
+4.4.  Real-time Data Quality and Validity Issue
 
    The decision-making of AI agents is determined by the quality of the
    data they receive.  In a network environment, data quality is of
@@ -376,9 +376,9 @@ Table of Contents
    financial losses when agents take autonomous actions (e.g., traffic
    rerouting, forced execution of financial transactions).  Therefore,
    it must extend beyond the current focus on bandwidth and speed to
-   include quality verification of the data agents rely upon and
-   resilience of service paths.  This is essential to meet the
-   requirements of continuously operating intelligent agents.
+   include the data quality verification agents rely upon.  This is
+   essential to meet the requirements of continuously operating
+   intelligent agents.
 
 4.5.  Problems with the Existing IBN System: Rigidity of the Intent
       Translation Engine (ITE)
