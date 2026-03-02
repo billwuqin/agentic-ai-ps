@@ -823,7 +823,9 @@ Table of Contents
 
 Acknowledgments
 
-   TBA
+   This work has benefited from the discussions of NMRG interim meeting
+   on Agentic AI.  Thanks Shailesh Prabhu for wonderful comments and
+   inputs.
 
 Authors' Addresses
 
