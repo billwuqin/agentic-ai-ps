@@ -175,7 +175,7 @@ operation, management and security.
   font-weight: 400;
   font-display: swap;
   src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/oxygenmono-regular-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: 'Oxygen Mono';
@@ -183,7 +183,8 @@ operation, management and security.
   font-weight: 400;
   font-display: swap;
   src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('https://martinthomson.github.io/rfc-css/fonts/oxygenmono-regular-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 }
 
 @font-face {
@@ -1054,11 +1055,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">PS AgenticAI</td>
-<td class="right">February 2026</td>
+<td class="right">March 2026</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Hong, et al.</td>
-<td class="center">Expires 13 August 2026</td>
+<td class="center">Expires 3 September 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1071,12 +1072,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-hong-nmrg-agenticai-ps-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-02-09" class="published">9 February 2026</time>
+<time datetime="2026-03-02" class="published">2 March 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-08-13">13 August 2026</time></dd>
+<dd class="expires"><time datetime="2026-09-03">3 September 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1137,7 +1138,7 @@ operation, management and security.<a href="#section-abstract-1" class="pilcrow"
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 13 August 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 3 September 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1281,17 +1282,17 @@ operation, management and security.<a href="#section-abstract-1" class="pilcrow"
 real-time responsiveness, high efficiency and the ability to make autonomous decisions on a large scale from operational
 environments. To overcome the limitations of existing static automation methods and human-led Intent-Based Networking (IBN),
 a new Agentic AI-based paradigm is required. This involves introducing autonomous software entities that can interpret
-information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.<a href="#section-1-1" class="pilcrow">¶</a></p>
+intent information, make decisions, perform meaningful autonomous actions and adjust plans in response to changing circumstances.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">Unlike traditional automation, which relies on pre-programmed rules, agentic AI uses autonomous decision-making capabilities
 to handle large-scale network activities and customer requests swiftly and accurately. These agents perform tasks such as
 network traffic management, fault resolution, and customer interaction support, continuously executing responses that previously
-required manual human review or escalation.<a href="#section-1-2" class="pilcrow">¶</a></p>
+required manual human review or the issue escalation.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">Agentic AI uses large language models (LLMs) to encompass a wide variety of capabilities, such as reasoning, problem-solving,
 interacting with external environments and performing actions, which extend far beyond natural language processing. It can
 decompose tasks, breaking down complex objectives into specific tasks and subtasks to achieve them. This cognitive capacity enables
-a persistent cognitive cycle (observation, inference, action), continuously aligning network operations with high-level business intent.<a href="#section-1-3" class="pilcrow">¶</a></p>
+a persistent cognitive cycle (observation, reason, action), continuously aligning network operations with high-level business intent.<a href="#section-1-3" class="pilcrow">¶</a></p>
 <p id="section-1-4">When such autonomous agents are widely deployed across the communications and network domains, standardized protocols are essential to
-ensure interoperability and security between different vendor platforms and network domains. The collaborative nature of agent-based AI
+ensure interoperability and security among different vendor platforms and network domains. The collaborative nature of agent-based AI
 systems (multi-agent systems, or MAS) means that standardized agent-to-agent protocols (A2A protocols) must be defined to prevent silos
 forming within the system and to facilitate discovery, understanding and collaboration between agents.<a href="#section-1-4" class="pilcrow">¶</a></p>
 </section>
@@ -1329,13 +1330,13 @@ to independently plan, execute, and self-correct multi-step workflows.<a href="#
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-role-of-agentic-ai-in-netwo" class="section-name selfRef">Role of Agentic AI in Network Operations</a>
         </h3>
 <p id="section-3.1-1">The complexity of network management and network operations are increasing exponentially, due to the increased size of networks and the
-increased frequency of change, for for the new 5G and future 6G services. This makes it increasingly difficult for existing automation
+increased frequency of change, for the new 5G and future 6G services. This makes it increasingly difficult for existing automation
 techniques to meet the requirements for operational efficiency and service quality. Consequently, Agentic AI is an essential technological
 advancement for the realization of autonomous networks.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.1-2">Agentic AI refers to intelligent systems that can act autonomously to achieve specific business objectives with minimal human supervision.
-These systems can reason through multi-step problems and adjust their actions in real time. Unlike passive traditional AI systems that
-respond only to direct commands, Agentic AI is an active system operating within an autonomous, closed-loop framework. This framework
-enables the system to perceive its environment, reason, plan a sequence of actions and execute them using various tools and APIs. This
+These systems can reason through multi-step problems and adjust their actions in real time. Unlike traditional AI systems that
+respond only to direct commands passively, Agentic AI is an active system operating within an autonomous, closed-loop framework. This framework
+enables the system to perceive its environment, reason, plan a sequence of actions and execute them using various available tools and APIs. This
 autonomy enables it to perform complex, multi-step processes such as software development, data analysis and network management.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <p id="section-3.1-3">The aim of autonomous networks is to leverage the capabilities of Agentic AI in order to transition operations and maintenance from
 static, human-managed, rule-based automation to dynamic, intent-based automation that is governed by humans. The ultimate goal is to
@@ -1346,7 +1347,7 @@ collaboration. To achieve this, Agentic AI must align network capabilities with 
 customer experience and reducing operational costs. This involves translating comprehensive business intent into localized,
 actionable network configuration plans.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <p id="section-3.1-5">Agentic AI optimizes resource allocation based on real-time demand and business objectives, enabling smarter resource and energy
-usage. In architecture research for 6G, for example, the application of constrained agentic AI techniques focused on energy efficiency
+usage. In the architecture research for 6G, for example, the application of constrained agentic AI techniques focused on energy efficiency
 and secure real-time learning for dynamic resource allocation has been identified as a key objective <span>[<a href="#Agentic-AI-Wireless" class="cite xref">Agentic-AI-Wireless</a>]</span>.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
 <p id="section-3.1-6">The Autonomic Networking Integrated Model and Approach (ANIMA) Working Group of the IETF developed the Autonomic Service Agent (ASA) for
 autonomic networking. <span>[<a href="#RFC7575" class="cite xref">RFC7575</a>]</span> defines the ASA as An agent implemented on an autonomic node that implements an autonomic function,
@@ -1381,9 +1382,6 @@ the outcomes of execution (reflection) and uses logical reasoning to modify plan
               <p id="section-3.2.1-3.2.1">Long-term memory: It stores persistent information such as previously successful solutions, general knowledge and network architecture guidelines.<a href="#section-3.2.1-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-3.2.1-4">The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase, it determines
-which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately configuring the necessary
-parameters.<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="execution-interaction">
@@ -1394,13 +1392,16 @@ parameters.<a href="#section-3.2.1-4" class="pilcrow">¶</a></p>
 <p id="section-3.2.2-1">These components enable the agent to communicate with and make changes to the external environment (i.e. the network or system).<a href="#section-3.2.2-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3.2.2-2.1">
-              <p id="section-3.2.2-2.1.1">Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.<a href="#section-3.2.2-2.1.1" class="pilcrow">¶</a></p>
+              <p id="section-3.2.2-2.1.1">Tool set/capability: A collection of all the external interfaces that an agent uses to perform tasks within a network environment.
+The tool Orchestrator manages the list of external tools (APIs, functions) available for agents to use. During the planning phase,
+it determines which tool is most appropriate and, during the execution phase, it is responsible for calling the tool and accurately
+configuring the necessary parameters.<a href="#section-3.2.2-2.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-3.2.2-2.2">
               <p id="section-3.2.2-2.2.1">Execution environment: A sandbox environment in which code generated according to the plan is executed safely, and external tools are invoked.<a href="#section-3.2.2-2.2.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-3.2.2-2.3">
-              <p id="section-3.2.2-2.3.1">Sensing/observation mechanism: The channel through which the agent verifies execution results and collects the current environmental state. This
+              <p id="section-3.2.2-2.3.1">Sensing/observation mechanism: The channel through which the tool Orchestrator verifies execution results and collects the current environmental state. This
 involves more than just invoking tools; it continuously draws network events, sensor data and similar inputs into a feedback loop.<a href="#section-3.2.2-2.3.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
