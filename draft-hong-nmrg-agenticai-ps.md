@@ -579,4 +579,5 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TBA
+This work has benefited from the discussions of NMRG interim meeting on Agentic AI.  Thanks Shailesh Prabhu for wonderful
+comments and inputs.
