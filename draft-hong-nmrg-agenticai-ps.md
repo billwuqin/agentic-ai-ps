@@ -562,8 +562,12 @@ management AI agent include:
 
 # Security Considerations
 
-TODO Security
+When human operators interact with the AI Agent or the AI Agent interact with tools/APIs/LLMs or other AI agents,
+The security risks needs to be considered such as Memory Poisoning, Misuse of Tools, Privilege Compromise, Resource
+Overload, Cascading Hallucinations, Intent Breaking&Goal Manipulation, Misaligned & Deceptive Behaviours, Repudiation
+& Untraceability, Identity Spoofing& Impresonating,Overwheling human in the loop, etc.
 
+The detailed security consideration has been documented in in section 11 of {{?I-D.irtf-wmz-nmrg-agent-ndt-arch}}.
 
 # IANA Considerations
 
