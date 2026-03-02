@@ -1230,6 +1230,9 @@ operation, management and security.<a href="#section-abstract-1" class="pilcrow"
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.5">
                 <p id="section-toc.1-1.5.2.5.1"><a href="#section-5.5" class="auto internal xref">5.5</a>.  <a href="#name-objective-5-autonomous-high" class="internal xref">Objective 5 - Autonomous, High-Fidelity &amp; Action-Aware Network Measurement</a></p>
 </li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.6">
+                <p id="section-toc.1-1.5.2.6.1"><a href="#section-5.6" class="auto internal xref">5.6</a>.  <a href="#name-objective-6-explainable-and" class="internal xref">Objective 6 - Explainable and Accountable Autonomous Decision-Making</a></p>
+</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
@@ -1661,6 +1664,30 @@ reached, and releases resources back to the data plane.<a href="#section-5.5-3.2
           <li class="normal" id="section-5.5-3.3">
             <p id="section-5.5-3.3.1">Counterfactual &amp; Predictive “What-if” Metrics: Given a proposed config change (new AQM, additional slice, 400 GbE upgrade), the generator produces
 the expected delay/loss/jitter distributions before any byte is moved, letting operators compare KPI deltas without real-world probing.<a href="#section-5.5-3.3.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
+</section>
+</div>
+<div id="objective-6-explainable-and-accountable-autonomous-decision-making">
+<section id="section-5.6">
+        <h3 id="name-objective-6-explainable-and">
+<a href="#section-5.6" class="section-number selfRef">5.6. </a><a href="#name-objective-6-explainable-and" class="section-name selfRef">Objective 6 - Explainable and Accountable Autonomous Decision-Making</a>
+        </h3>
+<p id="section-5.6-1">To ensure that autonomous and agentic AI systems operating the network can be trusted, governed, and safely adopted at scale, their decisions and actions must be explainable, traceable, and accountable throughout the operational lifecycle.<a href="#section-5.6-1" class="pilcrow">¶</a></p>
+<p id="section-5.6-2">Key Features:
+- Decision Traceability &amp; Reasoning Lineage: AI agents maintain an auditable chain linking high-level goals, observed network state, inferred hypotheses, selected plans, and executed actions. Each autonomous decision can be traced back to the inputs, assumptions, and intermediate reasoning steps that produced it.<a href="#section-5.6-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-5.6-3.1">
+            <p id="section-5.6-3.1.1">Confidence, Uncertainty &amp; Risk Awareness: Alongside every major decision or recommendation, AI agents expose confidence levels, uncertainty bounds, or risk indicators, enabling operators and higher-level agents to assess decision reliability and determine when human oversight or additional validation is required.<a href="#section-5.6-3.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-5.6-3.2">
+            <p id="section-5.6-3.2.1">Human-Interpretable Explanations for Operations: Instead of opaque actions, agents generate concise, human-readable explanations describing why a specific action was taken (e.g., configuration change, traffic reroute, security response), allowing operators to rapidly understand intent, impact, and alternatives.<a href="#section-5.6-3.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-5.6-3.3">
+            <p id="section-5.6-3.3.1">Post-Incident Accountability &amp; Audit Support: In failure, outage, or policy-violation scenarios, AI agents provide verifiable decision logs and justification records that support root-cause analysis, compliance checks, and continuous improvement of autonomous behaviors.<a href="#section-5.6-3.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-5.6-3.4">
+            <p id="section-5.6-3.4.1">Policy-Aware Oversight &amp; Intervention Hooks: Explainability mechanisms enable policy engines, supervisory agents, or human operators to validate decisions against organizational constraints, override actions when required, and refine operational policies based on observed agent behavior.<a href="#section-5.6-3.4.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
 </section>
