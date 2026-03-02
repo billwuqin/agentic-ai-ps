@@ -229,6 +229,12 @@ Table of Contents
    content in the development, training, deployment and use of AI models
    [AIPREF].
 
+   The A2A-T protocol is tailored for Autonomous Networking scenarios,
+   facilitating effective multi-agent communication and collaboration.
+   This extension aims to enhance interoperability and efficiency in
+   complex telecommunications environments by providing a standardized
+   interaction framework among agents across various layers and domains.
+
 3.2.  Operation of Agentic AI for Network Management
 
    The principal components of agentic AI can be broadly divided into
