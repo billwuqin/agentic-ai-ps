@@ -771,7 +771,16 @@ Table of Contents
 
 7.  Security Considerations
 
-   TODO Security
+   When human operators interact with the AI Agent or the AI Agent
+   interact with tools/APIs/LLMs or other AI agents, The security risks
+   needs to be considered such as Memory Poisoning, Misuse of Tools,
+   Privilege Compromise, Resource Overload, Cascading Hallucinations,
+   Intent Breaking&Goal Manipulation, Misaligned & Deceptive Behaviours,
+   Repudiation & Untraceability, Identity Spoofing&
+   Impresonating,Overwheling human in the loop, etc.
+
+   The detailed security consideration has been documented in in section
+   11 of [I-D.irtf-wmz-nmrg-agent-ndt-arch].
 
 8.  IANA Considerations
 
@@ -802,6 +811,9 @@ Table of Contents
 
    [ANIMA]    "IETF ANIMA WG", 2025,
               <https://datatracker.ietf.org/group/anima/about/>.
+
+   [I-D.irtf-wmz-nmrg-agent-ndt-arch]
+              "*** BROKEN REFERENCE ***".
 
    [RFC7575]  Behringer, M., Pritikin, M., Bjarnason, S., Clemm, A.,
               Carpenter, B., Jiang, S., and L. Ciavaglia, "Autonomic
