@@ -204,7 +204,7 @@ Language Models (SLMs).
       *  Short-term memory: It stores the context of the current task and recent
          execution results.
 
-      *  Long-term memory: It stores persistent information such as previously 
+      *  Long-term memory: It stores persistent information such as previously
          successful solutions, general knowledge and network architecture guidelines.
 
       *  Graph-Augmented Knowledge Base: Integrates real-time network telemetry
