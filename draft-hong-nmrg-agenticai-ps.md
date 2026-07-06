@@ -116,7 +116,7 @@ to achieve complex, high-level goals with minimal human intervention. Unlike tra
 follows fixed rules or simple prompt-response cycles, Agentic AI function uses a reasoning engine (often a Large Language Model)
 to independently plan, execute, and self-correct multi-step workflows.
 
-# Agentic AI for Network mMnagement
+# Agentic AI for Network Management
 
 ## Role of Agentic AI in Network Operations
 
@@ -146,7 +146,7 @@ usage. In the architecture research for 6G, for example, the application of cons
 and secure real-time learning for dynamic resource allocation has been identified as a key objective {{Agentic-AI-Wireless}}.
 
 The Autonomic Networking Integrated Model and Approach (ANIMA) Working Group of the IETF developed the Autonomic Service Agent (ASA) for
-autonomic networking. {{?RFC7575}} defines the ASA as An agent implemented on an autonomic node that implements an autonomic function,
+autonomic networking. {{?RFC7575}} defines the ASA as an agent implemented on an autonomic node that implements an autonomic function,
 either in part (in the case of a distributed function) or whole {{?RFC7575}}. In other words, the ASA is a core component of ANIMA: a
 software module that performs autonomic functions on network nodes. The ANIMA Working Group is defining design guidelines, lifecycle
 management, authorization and coordination standards for the ASA {{ANIMA}}.
@@ -154,9 +154,19 @@ management, authorization and coordination standards for the ASA {{ANIMA}}.
 IETF’ AI Preferences (AIPREF) Working Group is focused on standardizing a common vocabulary and mechanism through which users and systems
 can express their preferences regarding the use of their content in the development, training, deployment and use of AI models {{AIPREF}}.
 
-The A2A-T protocol is tailored for Autonomous Networking scenarios, facilitating effective multi-agent communication and collaboration.
-This extension aims to enhance interoperability and efficiency in complex telecommunications environments by providing a standardized
-interaction framework among agents across various layers and domains.
+The Agent-to-Agent Telecommunication(A2A-T) protocol is tailored for Autonomous Networking scenarios, facilitating effective multi-agent
+communication and collaboration. This extension aims to enhance interoperability and efficiency in complex telecommunications environments
+by providing a standardized interaction framework among agents across various layers and domains.
+
+To prevent multi-vendor agent silos, the A2A-T protocol layer must standardize three foundational mechanisms:
+   
+- Capability Discovery: Standardized schema for agents to advertise their specialized domains, available tools, and underlying model
+  constraints.
+
+- Task Delegation: Formalized protocols for an orchestrator agent to distribute subtasks to worker agents with state-tracking.
+
+- Semantic Negotiation & Consensus: Mechanisms for heterogeneous agents to negotiate network resource slicing and reach consensus 
+  when resolving cross-domain intent conflicts.
 
 ## Operation of Agentic AI for Network Management
 
@@ -291,7 +301,7 @@ beyond the existing ANIMA framework.
 
 ## Objective 1 - Autonomous Network Operations & Management
 
-Beyond minimizing human intervention, it must implement a Autonomous Driving Netowrk (defined in TMF)  that autonomously recognises,
+Beyond minimizing human intervention, it must implement a Autonomous Driving Network (defined in TMF)  that autonomously recognises,
 diagnoses, infers, and resolves issues even in unpredictable situations.
 
 Key Features:
@@ -523,7 +533,7 @@ o Tasks involve cross-layer and cross-domain aspects
                                         |
           Model Invocation    +---------+--------+
    +--------------------------+                  |
-   |         Momery Access     Network Management -----------+
+   |         Memory Access     Network Management -----------+
    |        +-----------------+     AI Agent     |           |
    |        |            +----|                  |           |
    |        |            |    +-------^---+------+           |
@@ -565,7 +575,7 @@ management AI agent include:
 When human operators interact with the AI Agent or the AI Agent interact with tools/APIs/LLMs or other AI agents,
 The security risks needs to be considered such as Memory Poisoning, Misuse of Tools, Privilege Compromise, Resource
 Overload, Cascading Hallucinations, Intent Breaking&Goal Manipulation, Misaligned & Deceptive Behaviours, Repudiation
-& Untraceability, Identity Spoofing& Impresonating,Overwheling human in the loop, etc.
+& Untraceability, Identity Spoofing& Impersonating,Overwhelming human in the loop, etc.
 
 The detailed security consideration has been documented in in section 11 of {{?I-D.wmz-nmrg-agent-ndt-arch}}.
 
