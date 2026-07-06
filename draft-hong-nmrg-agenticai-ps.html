@@ -1209,6 +1209,9 @@ operation, management and security.<a href="#section-abstract-1" class="pilcrow"
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.6">
                 <p id="section-toc.1-1.4.2.6.1"><a href="#section-4.6" class="auto internal xref">4.6</a>.  <a href="#name-anima-asas-problem-cognitiv" class="internal xref">ANIMA ASA's Problem: Cognitive Simplicity</a></p>
 </li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.7">
+                <p id="section-toc.1-1.4.2.7.1"><a href="#section-4.7" class="auto internal xref">4.7</a>.  <a href="#name-probabilistic-tool-use-unce" class="internal xref">Probabilistic Tool-Use Uncertainty vs. Deterministic Network Execution</a></p>
+</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
@@ -1596,6 +1599,20 @@ Agentic AI (LLM-based task decomposition). ANIMA's ASA is conceptually a precurs
 Agentic AI introduces LLM-based planning and tool-use capabilities that require complex, semantic negotiation (A2A) beyond simple
 information exchange (GeneRic Autonomic Signaling Protocol; GRASP), demonstrating the necessity for a dedicated protocol layer that extends
 beyond the existing ANIMA framework.<a href="#section-4.6-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="probabilistic-tool-use-uncertainty-vs-deterministic-network-execution">
+<section id="section-4.7">
+        <h3 id="name-probabilistic-tool-use-unce">
+<a href="#section-4.7" class="section-number selfRef">4.7. </a><a href="#name-probabilistic-tool-use-unce" class="section-name selfRef">Probabilistic Tool-Use Uncertainty vs. Deterministic Network Execution</a>
+        </h3>
+<p id="section-4.7-1">The execution domain of Agentic AI fundamentally relies on function calling or tool invocation (e.g., executing RESTCONF, NETCONF, or CLI
+commands). However, LLM/SLM reasoning engines are inherently probabilistic, meaning they select and configure tools based on statistical
+probabilities rather than absolute deterministic rules.<a href="#section-4.7-1" class="pilcrow">¶</a></p>
+<p id="section-4.7-2">In network operations, a minor variation in a tool argument (e.g., an incorrectly formatted BGP community string or a typo in an IP address
+prefix) can trigger catastrophic network wide failures or route flapping. Existing network automation toolchains do not possess semantic-aware
+validation layers that can safely intercept, evaluate, and sanitize the probabilistic outputs of autonomous agents before they interact with
+the live data plane.<a href="#section-4.7-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>

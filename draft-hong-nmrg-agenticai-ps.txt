@@ -84,6 +84,8 @@ Table of Contents
      4.5.  Problems with the Existing IBN System: Rigidity of the
            Intent Translation Engine (ITE)
      4.6.  ANIMA ASA's Problem: Cognitive Simplicity
+     4.7.  Probabilistic Tool-Use Uncertainty vs. Deterministic
+           Network Execution
    5.  Objectives of Agentic AI for Operations & Management
      5.1.  Objective 1 - Autonomous Network Operations & Management
      5.2.  Objective 2 - Intelligent & Dynamic Resource Orchestration
@@ -470,6 +472,23 @@ Table of Contents
    (A2A) beyond simple information exchange (GeneRic Autonomic Signaling
    Protocol; GRASP), demonstrating the necessity for a dedicated
    protocol layer that extends beyond the existing ANIMA framework.
+
+4.7.  Probabilistic Tool-Use Uncertainty vs. Deterministic Network
+      Execution
+
+   The execution domain of Agentic AI fundamentally relies on function
+   calling or tool invocation (e.g., executing RESTCONF, NETCONF, or CLI
+   commands).  However, LLM/SLM reasoning engines are inherently
+   probabilistic, meaning they select and configure tools based on
+   statistical probabilities rather than absolute deterministic rules.
+
+   In network operations, a minor variation in a tool argument (e.g., an
+   incorrectly formatted BGP community string or a typo in an IP address
+   prefix) can trigger catastrophic network wide failures or route
+   flapping.  Existing network automation toolchains do not possess
+   semantic-aware validation layers that can safely intercept, evaluate,
+   and sanitize the probabilistic outputs of autonomous agents before
+   they interact with the live data plane.
 
 5.  Objectives of Agentic AI for Operations & Management
 
