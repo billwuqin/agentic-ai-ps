@@ -278,6 +278,11 @@ or financial losses when agents take autonomous actions (e.g., traffic rerouting
 Therefore, it must extend beyond the current focus on bandwidth and speed to include the data quality verification agents rely
 upon. This is essential to meet the requirements of continuously operating intelligent agents.
 
+Traditional telemetry focuses heavily on high bandwidth and raw packet collection speeds. However, existing Intent Translation
+Engines lacks the capability to map raw network telemetry into a structured, semantic knowledge base in real time. Without an
+automated framework to convert noisy, multi-modal telemetry streams into dynamic Knowledge Graphs (Graph-RAG ready), AI agents
+will suffer from a "semantic gap," resulting in flawed root-cause analysis.
+
 ## Problems with the Existing IBN System: Rigidity of the Intent Translation Engine (ITE)
 
 Existing IBN systems rely on the Intent Translation Engine (ITE) or the Intent-Based System (IBS) spatial functionality to bridge the
