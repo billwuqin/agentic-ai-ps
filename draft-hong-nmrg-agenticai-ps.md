@@ -174,18 +174,6 @@ The principal components of agentic AI can be broadly divided into the intellige
 
 ### Intelligence core
 
-The intelligence core is responsible for an agent's decision-making and problem-solving capabilities. Large language models (LLMs) or
-specialized AI models form the basis of this core. Reasoning Engine/LLM: This constitutes the core of the agent's brain. It understands
-abstract objectives (intent) received from users or higher-level systems, creates step-by-step plans (plan) to achieve them, evaluates
-the outcomes of execution (reflection) and uses logical reasoning to modify plans or determine subsequent steps.
-
-Memory is the data repository that agents learn from and refer to.
-
- - Short-term memory: It stores the context of the current task and recent execution results.
-
- - Long-term memory: It stores persistent information such as previously successful solutions, general knowledge and network architecture guidelines.
-
-
 The intelligence core is responsible for an agent's decision-making
 and problem-solving capabilities. To meet the low-latency and
 high-reliability requirements of next-generation networks (e.g., 6G), this
