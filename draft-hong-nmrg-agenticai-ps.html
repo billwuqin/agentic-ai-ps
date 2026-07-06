@@ -1524,6 +1524,10 @@ the issue that the central server becomes a bottleneck, limiting scalability. Th
 models (single point of failure (SPoF), latency) inevitably drive Agentic AI architectures towards a distributed mesh form.
 This leverages local processing at the edge for low latency and fault tolerance, requiring the standardization of distributed
 control and communication mechanisms that transcend conventional centralized SDN/management models.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<p id="section-4.1-2">Furthermore, in complex Multi-Agent Systems (MAS), maintaining state synchronization and data consistency across distributed
+agents introduces severe orchestration overheads. As agents exchange raw logs, prompts, and planning histories, the sheer
+volume of interaction data frequently causes Context Window Bottlenecks in edge reasoning engines, leading to information
+loss or operational desynchronization during large-scale network failures.<a href="#section-4.1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="absence-of-agent-to-agent-a2a-semantic-interoperability">
