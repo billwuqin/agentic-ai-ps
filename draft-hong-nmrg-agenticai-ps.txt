@@ -5,12 +5,12 @@
 Network Management                                               Y. Hong
 Internet-Draft                                        Daejeon University
 Intended status: Informational                                   J. Youn
-Expires: 3 September 2026                            DONG-EUI University
+Expires: 7 January 2027                              DONG-EUI University
                                                                    Q. Wu
                                                                   Huawei
                                                                B. Claise
                                                           Everything OPS
-                                                            2 March 2026
+                                                             6 July 2026
 
 
  Motivations and Problem Statement of Agentic AI for network management
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 September 2026.
+   This Internet-Draft will expire on 7 January 2027.
 
 Copyright Notice
 
@@ -70,7 +70,7 @@ Table of Contents
 
    1.  Introduction
    2.  Conventions and Definitions
-   3.  Agentic AI for Network mMnagement
+   3.  Agentic AI for Network Management
      3.1.  Role of Agentic AI in Network Operations
      3.2.  Operation of Agentic AI for Network Management
        3.2.1.  Intelligence core
@@ -165,7 +165,7 @@ Table of Contents
       Language Model) to independently plan, execute, and self-correct
       multi-step workflows.
 
-3.  Agentic AI for Network mMnagement
+3.  Agentic AI for Network Management
 
 3.1.  Role of Agentic AI in Network Operations
 
@@ -216,7 +216,7 @@ Table of Contents
 
    The Autonomic Networking Integrated Model and Approach (ANIMA)
    Working Group of the IETF developed the Autonomic Service Agent (ASA)
-   for autonomic networking.  [RFC7575] defines the ASA as An agent
+   for autonomic networking.  [RFC7575] defines the ASA as an agent
    implemented on an autonomic node that implements an autonomic
    function, either in part (in the case of a distributed function) or
    whole [RFC7575].  In other words, the ASA is a core component of
@@ -231,11 +231,26 @@ Table of Contents
    content in the development, training, deployment and use of AI models
    [AIPREF].
 
-   The A2A-T protocol is tailored for Autonomous Networking scenarios,
-   facilitating effective multi-agent communication and collaboration.
-   This extension aims to enhance interoperability and efficiency in
-   complex telecommunications environments by providing a standardized
-   interaction framework among agents across various layers and domains.
+   The Agent-to-Agent Telecommunication(A2A-T) protocol is tailored for
+   Autonomous Networking scenarios, facilitating effective multi-agent
+   communication and collaboration.  This extension aims to enhance
+   interoperability and efficiency in complex telecommunications
+   environments by providing a standardized interaction framework among
+   agents across various layers and domains.
+
+   To prevent multi-vendor agent silos, the A2A-T protocol layer must
+   standardize three foundational mechanisms:
+
+   *  Capability Discovery: Standardized schema for agents to advertise
+      their specialized domains, available tools, and underlying model
+      constraints.
+
+   *  Task Delegation: Formalized protocols for an orchestrator agent to
+      distribute subtasks to worker agents with state-tracking.
+
+   *  Semantic Negotiation & Consensus: Mechanisms for heterogeneous
+      agents to negotiate network resource slicing and reach consensus
+      when resolving cross-domain intent conflicts.
 
 3.2.  Operation of Agentic AI for Network Management
 
@@ -419,7 +434,7 @@ Table of Contents
 5.1.  Objective 1 - Autonomous Network Operations & Management
 
    Beyond minimizing human intervention, it must implement a Autonomous
-   Driving Netowrk (defined in TMF) that autonomously recognises,
+   Driving Network (defined in TMF) that autonomously recognises,
    diagnoses, infers, and resolves issues even in unpredictable
    situations.
 
@@ -723,7 +738,7 @@ Table of Contents
                                            |
              Model Invocation    +---------+--------+
       +--------------------------+                  |
-      |         Momery Access     Network Management -----------+
+      |         Memory Access     Network Management -----------+
       |        +-----------------+     AI Agent     |           |
       |        |            +----|                  |           |
       |        |            |    +-------^---+------+           |
@@ -777,7 +792,7 @@ Table of Contents
    Privilege Compromise, Resource Overload, Cascading Hallucinations,
    Intent Breaking&Goal Manipulation, Misaligned & Deceptive Behaviours,
    Repudiation & Untraceability, Identity Spoofing&
-   Impresonating,Overwheling human in the loop, etc.
+   Impersonating,Overwhelming human in the loop, etc.
 
    The detailed security consideration has been documented in in section
    11 of [I-D.wmz-nmrg-agent-ndt-arch].
@@ -816,9 +831,9 @@ Table of Contents
               Wu, Q., Zhou, C., Contreras, L. M., Han, S., and Y. Hong,
               "Network Digital Twin and Agentic AI based Architecture
               for AI driven Network Operations", Work in Progress,
-              Internet-Draft, draft-wmz-nmrg-agent-ndt-arch-03, 23
-              February 2026, <https://datatracker.ietf.org/doc/html/
-              draft-wmz-nmrg-agent-ndt-arch-03>.
+              Internet-Draft, draft-wmz-nmrg-agent-ndt-arch-04, 21 May
+              2026, <https://datatracker.ietf.org/doc/html/draft-wmz-
+              nmrg-agent-ndt-arch-04>.
 
    [RFC7575]  Behringer, M., Pritikin, M., Bjarnason, S., Clemm, A.,
               Carpenter, B., Jiang, S., and L. Ciavaglia, "Autonomic
