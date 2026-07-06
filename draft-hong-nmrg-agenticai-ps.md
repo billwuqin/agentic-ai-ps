@@ -159,13 +159,13 @@ communication and collaboration. This extension aims to enhance interoperability
 by providing a standardized interaction framework among agents across various layers and domains.
 
 To prevent multi-vendor agent silos, the A2A-T protocol layer must standardize three foundational mechanisms:
-   
+
 - Capability Discovery: Standardized schema for agents to advertise their specialized domains, available tools, and underlying model
   constraints.
 
 - Task Delegation: Formalized protocols for an orchestrator agent to distribute subtasks to worker agents with state-tracking.
 
-- Semantic Negotiation & Consensus: Mechanisms for heterogeneous agents to negotiate network resource slicing and reach consensus 
+- Semantic Negotiation & Consensus: Mechanisms for heterogeneous agents to negotiate network resource slicing and reach consensus
   when resolving cross-domain intent conflicts.
 
 ## Operation of Agentic AI for Network Management
