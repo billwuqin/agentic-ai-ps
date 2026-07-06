@@ -251,6 +251,11 @@ models (single point of failure (SPoF), latency) inevitably drive Agentic AI arc
 This leverages local processing at the edge for low latency and fault tolerance, requiring the standardization of distributed
 control and communication mechanisms that transcend conventional centralized SDN/management models.
 
+Furthermore, in complex Multi-Agent Systems (MAS), maintaining state synchronization and data consistency across distributed
+agents introduces severe orchestration overheads. As agents exchange raw logs, prompts, and planning histories, the sheer
+volume of interaction data frequently causes Context Window Bottlenecks in edge reasoning engines, leading to information
+loss or operational desynchronization during large-scale network failures.
+
 ## Absence of agent-to-agent (A2A) Semantic Interoperability
 
 Agentic systems are often built by different vendors using various frameworks, leading to fragmented and siloed system operations.
