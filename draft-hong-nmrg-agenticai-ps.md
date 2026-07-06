@@ -334,6 +334,17 @@ Agentic AI introduces LLM-based planning and tool-use capabilities that require 
 information exchange (GeneRic Autonomic Signaling Protocol; GRASP), demonstrating the necessity for a dedicated protocol layer that extends
 beyond the existing ANIMA framework.
 
+## Probabilistic Tool-Use Uncertainty vs. Deterministic Network Execution
+
+The execution domain of Agentic AI fundamentally relies on function calling or tool invocation (e.g., executing RESTCONF, NETCONF, or CLI
+commands). However, LLM/SLM reasoning engines are inherently probabilistic, meaning they select and configure tools based on statistical
+probabilities rather than absolute deterministic rules.
+
+In network operations, a minor variation in a tool argument (e.g., an incorrectly formatted BGP community string or a typo in an IP address
+prefix) can trigger catastrophic network wide failures or route flapping. Existing network automation toolchains do not possess semantic-aware
+validation layers that can safely intercept, evaluate, and sanitize the probabilistic outputs of autonomous agents before they interact with
+the live data plane.
+
 # Objectives of Agentic AI for Operations & Management
 
 ## Objective 1 - Autonomous Network Operations & Management
