@@ -185,6 +185,33 @@ Memory is the data repository that agents learn from and refer to.
 
  - Long-term memory: It stores persistent information such as previously successful solutions, general knowledge and network architecture guidelines.
 
+
+The intelligence core is responsible for an agent's decision-making
+and problem-solving capabilities. To meet the low-latency and
+high-reliability requirements of next-generation networks (e.g., 6G), this
+core MUST evolve into a Hybrid Hierarchical Architecture comprising
+both cloud-scale Large Language Models (LLMs) and network-specific Small
+Language Models (SLMs).
+
+- Reasoning Engine (LLM/SLM): Cloud-scale LLMs handle abstract, cross-domain
+      intents and complex global strategy formulation. In contrast, lightweight
+      specialized SLMs are deployed at edge nodes or network functions to execute
+      localized real-time reasoning, immediate fault diagnostic loops, and
+      deterministic action translations without relying on high-latency cloud
+      connectivity.
+
+- Memory:
+      *  Short-term memory: It stores the context of the current task and recent
+         execution results.
+
+      *  Long-term memory: It stores persistent information such as previously
+         successful solutions, general knowledge and network architecture guidelines.
+
+      *  Graph-Augmented Knowledge Base: Integrates real-time network telemetry
+         with topological knowledge graphs (Graph-RAG), allowing the reasoning
+         engine to maintain structural awareness of vendor-specific configurations
+         and physical constraints.
+
 ### Execution & Interaction
 
 These components enable the agent to communicate with and make changes to the external environment (i.e. the network or system).
